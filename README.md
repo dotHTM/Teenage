@@ -5,9 +5,13 @@ A Sublime Text color scheme inspired by the [Teenage Engineering](https://teenag
 Adds the following color schemes:
 
 - Teenage Board - Dark
-![Preview: Teenage Board - Dark](PO_dark.png)
 - Teenage Screen - Light
-![Preview: Teenage Screen - Light](PO_light.png)
+
+<nobr>
+    <img src="PO_dark.png" alt="Preview: Teenage Board - Dark" style="max-width: 583px"/>
+    <img src="PO_light.png" alt="Preview: Teenage Screen - Light" style="max-width: 583px"/>
+</nobr>
+
 
 ## recommended Preferences
 
