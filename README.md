@@ -2,7 +2,7 @@
 
 A Sublime Text color scheme inspired by the [Teenage Engineering](https://teenage.engineering) [Pocket Operator](https://teenage.engineering/products/po) series of musical instruments.
 
-![Preview](https://raw.github.com/dothtm/Kimbie.sublime-color-scheme/master/screenshot.png)
+![Preview](https://raw.github.com/dothtm/Teenage/master/screenshot.png)
 
 
 ## recommended Preferences
@@ -41,5 +41,5 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 
 ## License
 
-License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/blob/master/LICENSE).
+License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/master/LICENSE).
 
