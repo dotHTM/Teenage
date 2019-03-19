@@ -29,7 +29,7 @@ Consider a bold or heavy font, such as:
 
 1. Make sure you already have [Package Control](http://wbond.net/sublime_packages/package_control/) installed
 2. Choose *Install Package* from the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `⇧⌘P` on OS X)
-3. Select *Kimbie Color Scheme* and press `Enter`
+3. Select *Teenage Color Scheme* and press `Enter`
 
 With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/) enabled, Package Control will keep all installed packages up-to-date!
 
