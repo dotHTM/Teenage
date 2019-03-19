@@ -37,6 +37,11 @@ Consider a bold or heavy font, such as:
 
 With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/) enabled, Package Control will keep all installed packages up-to-date!
 
+#### Installation via git
+
+1. Find your Packages folder with *Browse Packages* from the Command Palette.
+1. Clone <https://github.com/dotHTM/Teenage.git> into your Packages folder 
+
 #### Manual Installation
 
 1. Download a `.sublime-color-scheme` file of choice
