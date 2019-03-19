@@ -21,7 +21,7 @@ Adds the following color schemes:
 Consider a bold or heavy font, such as:
 
 ```json
-    "font_face": "SFMono-Heavy",
+"font_face": "SFMono-Heavy",
 ```
 
 
