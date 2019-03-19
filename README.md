@@ -2,8 +2,12 @@
 
 A Sublime Text color scheme inspired by the [Teenage Engineering](https://teenage.engineering) [Pocket Operator](https://teenage.engineering/products/po) series of musical instruments.
 
-![Preview](https://raw.github.com/dothtm/Teenage/master/screenshot.png)
+Adds the following color schemes:
 
+- Teenage Board - Dark
+![Preview: Teenage Board - Dark](PO_dark.png)
+- Teenage Screen - Light
+![Preview: Teenage Screen - Light](PO_light.png)
 
 ## recommended Preferences
 
@@ -12,7 +16,7 @@ A Sublime Text color scheme inspired by the [Teenage Engineering](https://teenag
 "line_padding_bottom": 2,
 ```
 
-### Light
+### Teenage Screen - Light
 
 Consider a bold or heavy font, such as:
 
