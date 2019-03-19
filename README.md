@@ -41,5 +41,5 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 
 ## License
 
-License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/LICENSE).
+License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/blob/master/LICENSE).
 
