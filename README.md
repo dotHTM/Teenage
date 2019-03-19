@@ -7,7 +7,7 @@ Adds the following color schemes:
 - Teenage Board - Dark
 - Teenage Screen - Light
 
-![Preview](Preview.png)
+![Preview](Preview@2x.png)
 
 ## recommended Preferences
 
