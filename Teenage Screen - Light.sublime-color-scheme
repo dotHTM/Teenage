@@ -1,5 +1,5 @@
 {
-  "name": "Teenage Board (Dark)",
+  "name": "Teenage Board_dark (Dark)",
   "author": "Michael Cramer",
   "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments",
 
@@ -13,13 +13,13 @@
   "variables":
   {
 
-    "screen_white_hi": "hsl( 204,  10%, 87%)",
-    "screen_white_lo": "hsl( 200,   9%, 80%)",
-    "screen_grey": "hsl( 195,   5%, 69%)",
-    "screen_black_hi": "hsl( 210,   1%, 31%)",
-    "screen_black_lo": "hsl( 180,   2%,  8%)",
+    "screen_white_hi_light": "hsl( 204,  10%, 87%)",
+    "screen_white_lo_light": "hsl( 200,   9%, 80%)",
+    "mid_screen_grey": "hsl( 195,   5%, 69%)",
+    "screen_black_hi_dark": "hsl( 210,   1%, 31%)",
+    "screen_black_lo_dark": "hsl( 180,   2%,  8%)",
 
-    "board": "hsl(   0,   0%, 14%)",
+    "board_dark": "hsl(   0,   0%, 14%)",
 
     "gold_hi": "hsl(  36,  85%, 74%)",
     "gold_lo": "hsl(  37,  60%, 64%)",
@@ -56,41 +56,41 @@
 
     "po35_hi": "hsl( 182,  77%, 32%)",
 
-    "button_click": "hsl( 180,   1%, 24%)",
-    "button_case": "hsl(  90,   2%, 79%)",
+    "button_click_dark": "hsl( 180,   1%, 24%)",
+    "button_case_light": "hsl(  90,   2%, 79%)",
 
   },
   "globals":
   {
-    "foreground": "var(screen_black_lo)",
-    "background": "var(screen_white_hi)",
-    "invisibles": "var(screen_grey)",
+    "foreground": "var(screen_black_lo_dark)",
+    "background": "var(screen_white_hi_light)",
+    "invisibles": "var(mid_screen_grey)",
 
-    // "gutter_foreground": "var(screen_black_lo)",
-    // "gutter": "var(screen_white_hi)",
+    // "gutter_foreground": "var(screen_black_lo_dark)",
+    // "gutter": "var(screen_white_hi_light)",
 
-    "caret": "var(screen_black_lo)",
-    "block_caret": "color(var(screen_black_lo) a(15%))",
+    "caret": "var(screen_black_lo_dark)",
+    "block_caret": "color(var(screen_black_lo_dark) a(15%))",
 
-    "selection": "color(var(screen_black_hi) a(5%))",
-    "selection_border": "var(screen_white_lo)",
-    "inactive_selection": "color(var(screen_black_hi) a(5%))",
+    "selection": "color(var(screen_black_hi_dark) a(5%))",
+    "selection_border": "var(screen_white_lo_light)",
+    "inactive_selection": "color(var(screen_black_hi_dark) a(5%))",
     "selection_border_width": "4",
     // "selection_corner_style": "cut", //round (the default), cut or square
 
-    "line_highlight": "var(screen_white_lo)",
+    "line_highlight": "var(screen_white_lo_light)",
 
-    "highlight": "var(screen_grey)",
-    "find_highlight": "var(screen_white_lo)",
-    "find_highlight_foreground": "color(var(screen_black_lo) a(33%))",
+    "highlight": "var(mid_screen_grey)",
+    "find_highlight": "var(screen_white_lo_light)",
+    "find_highforeground_light": "color(var(screen_black_lo_dark) a(33%))",
 
-    "guide": "color(var(screen_black_lo) a(33%))",
-    "active_guide": "var(screen_black_lo)",
-    "stack_guide": "color(var(screen_black_lo) a(33%))",
+    "guide": "color(var(screen_black_lo_dark) a(33%))",
+    "active_guide": "var(screen_black_lo_dark)",
+    "stack_guide": "color(var(screen_black_lo_dark) a(33%))",
 
     "misspelling": "var(po28_shadow)",
     "fold_marker": "var(gold_hi)",
-    "minimap_border": "var(button_case)",
+    "minimap_border": "var(button_case_light)",
     "accent": "var(gold_lo)",
 
     "brackets_options": "squiggly_underline bold",
@@ -106,30 +106,30 @@
     "line_diff_deleted": "var(po28_hi)",
     "line_diff_width": "8",
 
-    "shadow": "color(var(screen_black_hi) a(25%))",
+    "shadow": "color(var(screen_black_hi_dark) a(25%))",
     "shadow_width": "24",
   },
 
   "rules": [
     {
       "scope": "comment, comment punctuation", // Hello world
-      "foreground": "var(screen_black_lo)",
-      "background": "var(screen_white_lo)",
+      "foreground": "var(screen_black_lo_dark)",
+      "background": "var(screen_white_lo_light)",
       "font_style": "italic ",
     },
     {
-      "foreground": "var(screen_black_hi)",
+      "foreground": "var(screen_black_hi_dark)",
     },
     {
       "scope": "punctuation.definition.tag",
       "foreground": "var(gold_hi)",
-      "background": "var(screen_black_lo)",
+      "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
     {
       "scope": "entity.name",
       "foreground": "var(po28_hi)",
-      "background": "var(screen_black_lo)",
+      "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
     {
@@ -171,9 +171,9 @@
       "background": "var()",
     },
     {
-      "scope": "variable.parameter, meta.function.parameters",
+      "scope": "meta.function.parameters variable.parameter",
       "foreground": "var(gold_lo)",
-      "background": "var(screen_black_lo)",
+      "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
     {
@@ -204,7 +204,7 @@
     {
       "scope": "storage.type, meta.function - meta.block, meta.function.parameters ",
       "foreground": "var(po14_hi)",
-      "background": "var(screen_black_lo)",
+      "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
     {
@@ -219,7 +219,7 @@
         "color(var(po16_shadow) l(+ 20%))",
         "color(var(po16_shadow) l(- 10%))",
       ],
-      "background": "var(screen_white_hi)",
+      "background": "var(screen_white_hi_light)",
     },
     {
       "scope": "keyword, meta storage ",
@@ -260,12 +260,12 @@
     { // Default header style 
       "scope": "markup.heading",
       "foreground": "var(po32_hi)",
-      "background": "var(board)",
+      "background": "var(board_dark)",
       "font_style": "bold",
     },
     {
       "scope": "markup.heading punctuation",
-      "foreground": "var(screen_grey)",
+      "foreground": "var(mid_screen_grey)",
     },
     {
       "scope": "markup.heading.1",
@@ -282,26 +282,26 @@
     {
       "scope": "markup.heading.4",
       "foreground": "var(po16_lo)",
-      "background": "var(screen_white_lo)",
+      "background": "var(screen_white_lo_light)",
     },
     {
       "scope": "markup.heading.5",
       "foreground": "var(po14_lo)",
-      "background": "var(screen_white_lo)",
+      "background": "var(screen_white_lo_light)",
     },
     {
       "scope": "markup.heading.6",
       "foreground": "var(po12_lo)",
-      "background": "var(screen_white_lo)",
+      "background": "var(screen_white_lo_light)",
     },
     
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
-    {"scope": "etc.screen_white_hi","foreground": "var(screen_white_hi)",},
-    {"scope": "etc.screen_white_lo","foreground": "var(screen_white_lo)",},
-    {"scope": "etc.screen_grey","foreground": "var(screen_grey)",},
-    {"scope": "etc.screen_black_hi","foreground": "var(screen_black_hi)",},
-    {"scope": "etc.screen_black_lo","foreground": "var(screen_black_lo)",},
-    {"scope": "etc.board","foreground": "var(board)",},
+    {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
+    {"scope": "etc.screen_white_lo_light","foreground": "var(screen_white_lo_light)",},
+    {"scope": "etc.mid_screen_grey","foreground": "var(mid_screen_grey)",},
+    {"scope": "etc.screen_black_hi_dark","foreground": "var(screen_black_hi_dark)",},
+    {"scope": "etc.screen_black_lo_dark","foreground": "var(screen_black_lo_dark)",},
+    {"scope": "etc.board_dark","foreground": "var(board_dark)",},
     {"scope": "etc.gold_hi","foreground": "var(gold_hi)",},
     {"scope": "etc.gold_lo","foreground": "var(gold_lo)",},
     {"scope": "etc.po12_shadow","foreground": "var(po12_shadow)",},
@@ -323,10 +323,10 @@
     {"scope": "etc.po28_lo","foreground": "var(po28_lo)",},
     {"scope": "etc.po28_hi","foreground": "var(po28_hi)",},
     {"scope": "etc.po32_hi","foreground": "var(po32_hi)",},
-    {"scope": "etc.button_click","foreground": "var(button_click)",},
+    {"scope": "etc.button_click_dark","foreground": "var(button_click_dark)",},
     {"scope": "etc.po33_hi","foreground": "var(po33_hi)",},
     {"scope": "etc.po33_knob","foreground": "var(po33_knob)",},
     {"scope": "etc.po35_hi","foreground": "var(po35_hi)",},
-    {"scope": "etc.button_case","foreground": "var(button_case)",},
+    {"scope": "etc.button_case_light","foreground": "var(button_case_light)",},
   ],
 }
