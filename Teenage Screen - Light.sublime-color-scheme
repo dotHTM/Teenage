@@ -111,16 +111,13 @@
   },
 
   "rules": [
-
     {
       "scope": "comment, comment punctuation", // Hello world
       "foreground": "var(screen_black_lo)",
       "background": "var(screen_white_lo)",
       "font_style": "italic ",
     },
-
     {
-      "scope": "punctuation",
       "foreground": "var(screen_black_hi)",
     },
     {
@@ -129,46 +126,36 @@
       "background": "var(screen_black_lo)",
       "font_style": "bold"
     },
-
     {
       "scope": "entity.name",
       "foreground": "var(po28_hi)",
       "background": "var(screen_black_lo)",
       "font_style": "bold"
     },
-
-
     {
       "scope": "punctuation.separator",
       "foreground": "var(po28_shadow)",
       "font_style": "bold"
     },
-
-
-
     {
       "scope": "entity.other.inherited-class",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "entity.name.section",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "entity.name.tag",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "entity.other.attribute-name",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "variable",
@@ -177,63 +164,53 @@
         "var(po12_shadow)",
       ],
       "background": "color(hsl( 195,   5%, 69%) a(25%))",
-
     },
     {
       "scope": "variable.language",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "variable.parameter, meta.function.parameters",
       "foreground": "var(gold_lo)",
       "background": "var(screen_black_lo)",
       "font_style": "bold"
-
     },
     {
       "scope": "variable.function",
       "foreground": "var(po14_shadow)",
       "background": "var()",
-
     },
     {
       "scope": "constant",
       "foreground": "var(po33_hi)",
       "background": "var()",
-
     },
     {
       "scope": "constant.numeric",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "constant.language",
       "foreground": "var(po35_hi)",
       "background": "var()",
-
     },
     {
       "scope": "constant.character.escape",
       "foreground": "var(po35_hi)",
       "background": "var()",
-
     },
     {
       "scope": "storage.type, meta.function - meta.block, meta.function.parameters ",
       "foreground": "var(po14_hi)",
       "background": "var(screen_black_lo)",
       "font_style": "bold"
-
     },
     {
       "scope": "storage.modifier - meta",
       "foreground": "var(po35_hi)",
       "background": "var()",
-
     },
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
@@ -243,31 +220,26 @@
         "color(var(po16_shadow) l(- 10%))",
       ],
       "background": "var(screen_white_hi)",
-
     },
     {
       "scope": "keyword, meta storage ",
       "foreground": "var(po20_shadow)",
       "background": "var()",
-
     },
     {
       "scope": "keyword.control",
       "foreground": "var(po35_hi)",
       "background": "var()",
-
     },
     {
       "scope": "keyword.operator",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "keyword.declaration",
       "foreground": "var()",
       "background": "var()",
-
     },
     {
       "scope": "string",
@@ -284,41 +256,77 @@
       "foreground": "color(var(po24_hi) l(- 20%))",
       "background": "color(var(po28_shadow) l(- 20%))",
     },
-
-
+    // Markup Headers
+    { // Default header style 
+      "scope": "markup.heading",
+      "foreground": "var(po32_hi)",
+      "background": "var(board)",
+      "font_style": "bold",
+    },
+    {
+      "scope": "markup.heading punctuation",
+      "foreground": "var(screen_grey)",
+    },
+    {
+      "scope": "markup.heading.1",
+      "foreground": "var(po28_hi)",
+    },
+    {
+      "scope": "markup.heading.2",
+      "foreground": "var(po24_hi)",
+    },
+    {
+      "scope": "markup.heading.3",
+      "foreground": "var(po20_hi)",
+    },
+    {
+      "scope": "markup.heading.4",
+      "foreground": "var(po16_lo)",
+      "background": "var(screen_white_lo)",
+    },
+    {
+      "scope": "markup.heading.5",
+      "foreground": "var(po14_lo)",
+      "background": "var(screen_white_lo)",
+    },
+    {
+      "scope": "markup.heading.6",
+      "foreground": "var(po12_lo)",
+      "background": "var(screen_white_lo)",
+    },
+    
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
-{ "scope":"etc.screen_white_hi",  "foreground":"var(screen_white_hi)", },
-{ "scope":"etc.screen_white_lo",  "foreground":"var(screen_white_lo)", },
-{ "scope":"etc.screen_grey",  "foreground":"var(screen_grey)", },
-{ "scope":"etc.screen_black_hi",  "foreground":"var(screen_black_hi)", },
-{ "scope":"etc.screen_black_lo",  "foreground":"var(screen_black_lo)", },
-{ "scope":"etc.board",  "foreground":"var(board)", },
-{ "scope":"etc.gold_hi",  "foreground":"var(gold_hi)", },
-{ "scope":"etc.gold_lo",  "foreground":"var(gold_lo)", },
-{ "scope":"etc.po12_shadow",  "foreground":"var(po12_shadow)", },
-{ "scope":"etc.po12_lo",  "foreground":"var(po12_lo)", },
-{ "scope":"etc.po12_hi",  "foreground":"var(po12_hi)", },
-{ "scope":"etc.po14_shadow",  "foreground":"var(po14_shadow)", },
-{ "scope":"etc.po14_lo",  "foreground":"var(po14_lo)", },
-{ "scope":"etc.po14_hi",  "foreground":"var(po14_hi)", },
-{ "scope":"etc.po16_shadow",  "foreground":"var(po16_shadow)", },
-{ "scope":"etc.po16_lo",  "foreground":"var(po16_lo)", },
-{ "scope":"etc.po16_hi",  "foreground":"var(po16_hi)", },
-{ "scope":"etc.po20_shadow",  "foreground":"var(po20_shadow)", },
-{ "scope":"etc.po20_lo",  "foreground":"var(po20_lo)", },
-{ "scope":"etc.po20_hi",  "foreground":"var(po20_hi)", },
-{ "scope":"etc.po24_shadow",  "foreground":"var(po24_shadow)", },
-{ "scope":"etc.po24_lo",  "foreground":"var(po24_lo)", },
-{ "scope":"etc.po24_hi",  "foreground":"var(po24_hi)", },
-{ "scope":"etc.po28_shadow",  "foreground":"var(po28_shadow)", },
-{ "scope":"etc.po28_lo",  "foreground":"var(po28_lo)", },
-{ "scope":"etc.po28_hi",  "foreground":"var(po28_hi)", },
-{ "scope":"etc.po32_hi",  "foreground":"var(po32_hi)", },
-{ "scope":"etc.button_click",  "foreground":"var(button_click)", },
-{ "scope":"etc.po33_hi",  "foreground":"var(po33_hi)", },
-{ "scope":"etc.po33_knob",  "foreground":"var(po33_knob)", },
-{ "scope":"etc.po35_hi",  "foreground":"var(po35_hi)", },
-{ "scope":"etc.button_case",  "foreground":"var(button_case)", },
-
+    {"scope": "etc.screen_white_hi","foreground": "var(screen_white_hi)",},
+    {"scope": "etc.screen_white_lo","foreground": "var(screen_white_lo)",},
+    {"scope": "etc.screen_grey","foreground": "var(screen_grey)",},
+    {"scope": "etc.screen_black_hi","foreground": "var(screen_black_hi)",},
+    {"scope": "etc.screen_black_lo","foreground": "var(screen_black_lo)",},
+    {"scope": "etc.board","foreground": "var(board)",},
+    {"scope": "etc.gold_hi","foreground": "var(gold_hi)",},
+    {"scope": "etc.gold_lo","foreground": "var(gold_lo)",},
+    {"scope": "etc.po12_shadow","foreground": "var(po12_shadow)",},
+    {"scope": "etc.po12_lo","foreground": "var(po12_lo)",},
+    {"scope": "etc.po12_hi","foreground": "var(po12_hi)",},
+    {"scope": "etc.po14_shadow","foreground": "var(po14_shadow)",},
+    {"scope": "etc.po14_lo","foreground": "var(po14_lo)",},
+    {"scope": "etc.po14_hi","foreground": "var(po14_hi)",},
+    {"scope": "etc.po16_shadow","foreground": "var(po16_shadow)",},
+    {"scope": "etc.po16_lo","foreground": "var(po16_lo)",},
+    {"scope": "etc.po16_hi","foreground": "var(po16_hi)",},
+    {"scope": "etc.po20_shadow","foreground": "var(po20_shadow)",},
+    {"scope": "etc.po20_lo","foreground": "var(po20_lo)",},
+    {"scope": "etc.po20_hi","foreground": "var(po20_hi)",},
+    {"scope": "etc.po24_shadow","foreground": "var(po24_shadow)",},
+    {"scope": "etc.po24_lo","foreground": "var(po24_lo)",},
+    {"scope": "etc.po24_hi","foreground": "var(po24_hi)",},
+    {"scope": "etc.po28_shadow","foreground": "var(po28_shadow)",},
+    {"scope": "etc.po28_lo","foreground": "var(po28_lo)",},
+    {"scope": "etc.po28_hi","foreground": "var(po28_hi)",},
+    {"scope": "etc.po32_hi","foreground": "var(po32_hi)",},
+    {"scope": "etc.button_click","foreground": "var(button_click)",},
+    {"scope": "etc.po33_hi","foreground": "var(po33_hi)",},
+    {"scope": "etc.po33_knob","foreground": "var(po33_knob)",},
+    {"scope": "etc.po35_hi","foreground": "var(po35_hi)",},
+    {"scope": "etc.button_case","foreground": "var(button_case)",},
   ],
 }
