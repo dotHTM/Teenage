@@ -202,7 +202,7 @@
       "background": "var()",
     },
     {
-      "scope": "storage.type, meta.function - meta.block, meta.function.parameters ",
+      "scope": "meta.function.perl - meta.block.perl, meta.function storage.type, meta.function entity.name.function, meta.function.parameters , meta.function.shell punctuation.section.parens",
       "foreground": "var(po14_hi)",
       "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
