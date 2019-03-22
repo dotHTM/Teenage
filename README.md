@@ -31,16 +31,21 @@ Consider a bold or heavy font, such as:
 
 #### Package Control
 
-1. Make sure you already have [Package Control](http://wbond.net/sublime_packages/package_control/) installed
-2. Choose *Install Package* from the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `⇧⌘P` on OS X)
-3. Select *Teenage Color Scheme* and press `Enter`
+Make sure you already have [Package Control](http://wbond.net/sublime_packages/package_control/) installed.
+
+1. From the Command Palette, choose *Package Control: Add Repository*
+2. Add the url: https://github.com/dotHTM/Teenage
+3. From the Command Palette, choose *Package Control: Install Package*
+4. Search for and select *Teenage Color Scheme* and press `Enter`
+5. From the Command Palette, choose *UI: Select Color Scheme*
+6. Search for "Teenage", find your desired version, and press `Enter`
 
 With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/) enabled, Package Control will keep all installed packages up-to-date!
 
 #### Installation via git
 
 1. Find your Packages folder with *Browse Packages* from the Command Palette.
-1. Clone <https://github.com/dotHTM/Teenage.git> into your Packages folder 
+2. Clone <https://github.com/dotHTM/Teenage.git> into your Packages folder 
 
 #### Manual Installation
 
