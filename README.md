@@ -33,8 +33,6 @@ Consider a bold or heavy font, such as:
 
 Make sure you already have [Package Control](http://wbond.net/sublime_packages/package_control/) installed.
 
-1. From the Command Palette, choose *Package Control: Add Repository*
-2. Add the url: https://github.com/dotHTM/Teenage
 3. From the Command Palette, choose *Package Control: Install Package*
 4. Search for and select *Teenage Color Scheme* and press `Enter`
 5. From the Command Palette, choose *UI: Select Color Scheme*
