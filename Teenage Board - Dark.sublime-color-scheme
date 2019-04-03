@@ -44,6 +44,11 @@
     "po33_lo": "hsl(  10,  90%, 55%)",
     "po33_knob": "hsl( 150,   1%, 49%)",
 
+    "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
+    "po33_ghostly_lo": "rgb(  250,  45, 112) ",
+    "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
+    
+    
     "po35_hi": "color(hsl( 182,  77%, 32%) l(+ 10%))",
     "po35_lo": "hsl( 182,  77%, 32%)",
 
@@ -72,8 +77,8 @@
     "gutter_foreground": "var(screen_white_lo)",
     "gutter": "var(screen_black_lo)",
 
-    "caret": "var(screen_white_hi)",
-    "block_caret": "color(var(gold_hi) a(25%))",
+    "caret": "var(po33_ghostly_hi)",
+    "block_caret": "color(var(po33_ghostly_hi) a(25%))",
 
     "selection": "color(var(screen_white_hi) a(10%))",
     "selection_border": "var(screen_black_hi)",
@@ -81,8 +86,8 @@
     "selection_border_width": "4",
     "selection_corner_style": "cut", //round (the default), cut or square
 
-    "line_highlight": "color(var(screen_white_hi) a(10%))",
-    "highlight": "var(screen_black_hi)",
+    "line_highlight": "color(var(po33_ghostly_hi) a(10%))",
+    "highlight": "color(var(po33_ghostly_hi) a(40%))",
 
     "find_highlight": "var(board)",
     "find_highlight_foreground": "var(gold_hi)",
@@ -314,6 +319,9 @@
     {"scope": "etc.po33_hi","foreground": "var(po33_hi)",},
     {"scope": "etc.po33_lo","foreground": "var(po33_lo)",},
     {"scope": "etc.po33_knob","foreground": "var(po33_knob)",},
+    {"scope": "etc.po33_ghostly_hi","foreground": "var(po33_ghostly_hi)",},
+    {"scope": "etc.po33_ghostly_lo","foreground": "var(po33_ghostly_lo)",},
+    {"scope": "etc.po33_ghostly_cardboard","foreground": "var(po33_ghostly_cardboard)",},
     {"scope": "etc.po35_hi","foreground": "var(po35_hi)",},
     {"scope": "etc.po35_lo","foreground": "var(po35_lo)",},
     {"scope": "etc.button_case","foreground": "var(button_case)",},

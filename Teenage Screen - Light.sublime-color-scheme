@@ -54,6 +54,11 @@
     "po33_hi": "hsl(  10,  90%, 55%)",
     "po33_knob": "hsl( 150,   1%, 49%)",
 
+    "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
+    "po33_ghostly_lo": "rgb(  250,  45, 112) ",
+    "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
+
+
     "po35_hi": "hsl( 182,  77%, 32%)",
 
     "button_click_dark": "hsl( 180,   1%, 24%)",
@@ -69,8 +74,8 @@
     // "gutter_foreground": "var(screen_black_lo_dark)",
     // "gutter": "var(screen_white_hi_light)",
 
-    "caret": "var(screen_black_lo_dark)",
-    "block_caret": "color(var(screen_black_lo_dark) a(15%))",
+    "caret": "var(po33_ghostly_lo)",
+    "block_caret": "color(var(po33_ghostly_lo) a(25%))",
 
     "selection": "color(var(screen_black_hi_dark) a(5%))",
     "selection_border": "var(screen_white_lo_light)",
@@ -78,9 +83,9 @@
     "selection_border_width": "4",
     // "selection_corner_style": "cut", //round (the default), cut or square
 
-    "line_highlight": "var(screen_white_lo_light)",
+    "line_highlight": "color(var(po33_ghostly_hi) a(10%))",
 
-    "highlight": "var(mid_screen_grey)",
+    "highlight": "color(var(po33_ghostly_hi) a(40%))",
     "find_highlight": "var(screen_white_lo_light)",
     "find_highforeground_light": "color(var(screen_black_lo_dark) a(33%))",
 
@@ -330,6 +335,9 @@
     {"scope": "etc.po28_lo","foreground": "var(po28_lo)",},
     {"scope": "etc.po28_hi","foreground": "var(po28_hi)",},
     {"scope": "etc.po32_hi","foreground": "var(po32_hi)",},
+    {"scope": "etc.po33_ghostly_hi","foreground": "var(po33_ghostly_hi)",},
+    {"scope": "etc.po33_ghostly_lo","foreground": "var(po33_ghostly_lo)",},
+    {"scope": "etc.po33_ghostly_cardboard","foreground": "var(po33_ghostly_cardboard)",},
     {"scope": "etc.button_click_dark","foreground": "var(button_click_dark)",},
     {"scope": "etc.po33_hi","foreground": "var(po33_hi)",},
     {"scope": "etc.po33_knob","foreground": "var(po33_knob)",},
