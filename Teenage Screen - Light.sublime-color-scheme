@@ -307,6 +307,37 @@
       "background": "var(screen_white_lo_light)",
     },
     
+    
+    {
+      "scope": "markup.quote",
+      "foreground": "var()",
+      "background": "var(po24_hi)",
+    },
+    {
+      "scope": "punctuation.definition.list_item",
+      "foreground": "var(po33_ghostly_lo)",
+      "background": "var()",
+      "font_style": "bold"
+    },
+    
+    {
+      "scope": "markup.italic",
+      "foreground": "var()",
+      "background": "var(po14_hi)",
+    },
+    
+    {
+      "scope": "markup.bold",
+      "foreground": "var(po33_ghostly_hi)",
+      "background": "var()",
+    },
+      {
+      "scope": "markup.raw",
+      "foreground": "var()",
+      "background": "color(var(po33_ghostly_cardboard) a(50%))",
+    },
+    
+    
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
     {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
     {"scope": "etc.screen_white_lo_light","foreground": "var(screen_white_lo_light)",},
