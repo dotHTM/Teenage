@@ -39,7 +39,7 @@
 
     "po32_hi": "color(hsl(   0,   0%, 96%) l(+ 10%))",
     "po32_lo": "hsl(   0,   0%, 96%)",
-    
+
     "po33_hi": "color(hsl(  10,  90%, 55%) l(+ 10%))",
     "po33_lo": "hsl(  10,  90%, 55%)",
     "po33_knob": "hsl( 150,   1%, 49%)",
@@ -47,8 +47,8 @@
     "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
     "po33_ghostly_lo": "rgb(  250,  45, 112) ",
     "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
-    
-    
+
+
     "po35_hi": "color(hsl( 182,  77%, 32%) l(+ 10%))",
     "po35_lo": "hsl( 182,  77%, 32%)",
 
@@ -293,29 +293,42 @@
       "foreground": "var(po12_lo)",
       "background": "var(screen_black_hi)",
     },
-    
+
     {
       "scope": "markup.quote",
       "foreground": "var(po14_lo)",
       "background": "var()",
-    },
+    }, 
     {
       "scope": "punctuation.definition.list_item",
       "foreground": "var(po33_ghostly_lo)",
       "background": "var()",
     },
-    
+
     {
       "scope": "markup.italic",
       "foreground": "var(gold_lo)",
       "background": "var()",
     },
-    
+
     {
       "scope": "markup.bold",
       "foreground": "var(po33_ghostly_hi)",
       "background": "var()",
     },
+
+    {
+      "scope": "meta.block-level",
+      "foreground": "var()",
+      "background": "var(board)",
+    },
+
+  {
+      "scope": "markup.raw.block",
+      "foreground": "var(po33_ghostly_cardboard)",
+      "background": "var()",
+    },
+
     
     
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly

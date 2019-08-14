@@ -211,14 +211,14 @@
       "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
-       {
+    {
       "scope": "storage.type",
       "foreground": "var(po14_hi)",
     },
-    
 
-    
-    
+
+
+
     {
       "scope": "storage.modifier - meta",
       "foreground": "var(po35_hi)",
@@ -306,8 +306,8 @@
       "foreground": "var(po12_lo)",
       "background": "var(screen_white_lo_light)",
     },
-    
-    
+
+
     {
       "scope": "markup.quote",
       "foreground": "var()",
@@ -319,24 +319,24 @@
       "background": "var()",
       "font_style": "bold"
     },
-    
+
     {
       "scope": "markup.italic",
       "foreground": "var()",
       "background": "var(po14_hi)",
     },
-    
+
     {
       "scope": "markup.bold",
       "foreground": "var(po33_ghostly_hi)",
       "background": "var()",
     },
-      {
+    {
       "scope": "markup.raw",
       "foreground": "var()",
       "background": "color(var(po33_ghostly_cardboard) a(50%))",
     },
-    
+
     
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
     {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
