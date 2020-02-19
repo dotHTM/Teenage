@@ -329,6 +329,14 @@
       "background": "var()",
     },
 
+
+  {
+      "scope": "meta.heredoc",
+      // "foreground": "var(po33_ghostly_cardboard)",
+      "background": "color( var(po20_lo) a( 10%) )",
+    },
+
+
     
     
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly

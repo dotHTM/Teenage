@@ -104,7 +104,7 @@
     "bracket_contents_options": "underline bold",
 
     "tags_options": "squiggly_underline bold",
-    "tags_foreground": "var(po14_hi)",
+    "tags_foreground": "var(po14_lo)",
 
     "line_diff_added": "var(po12_hi)",
     "line_diff_modified": "var(po20_hi)",
@@ -213,7 +213,7 @@
     },
     {
       "scope": "storage.type",
-      "foreground": "var(po14_hi)",
+      "foreground": "var(po14_lo)",
     },
 
 
@@ -323,7 +323,7 @@
     {
       "scope": "markup.italic",
       "foreground": "var()",
-      "background": "var(po14_hi)",
+      "background": "var(po14_lo)",
     },
 
     {
@@ -337,6 +337,11 @@
       "background": "color(var(po33_ghostly_cardboard) a(50%))",
     },
 
+  {
+      "scope": "meta.heredoc",
+      // "foreground": "var(po33_ghostly_cardboard)",
+      "background": "color( var(po20_lo) a( 10%) )",
+    },
     
     // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
     {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
@@ -352,7 +357,7 @@
     {"scope": "etc.po12_hi","foreground": "var(po12_hi)",},
     {"scope": "etc.po14_shadow","foreground": "var(po14_shadow)",},
     {"scope": "etc.po14_lo","foreground": "var(po14_lo)",},
-    {"scope": "etc.po14_hi","foreground": "var(po14_hi)",},
+    {"scope": "etc.po14_hi","foreground": "var(po14_lo)",},
     {"scope": "etc.po16_shadow","foreground": "var(po16_shadow)",},
     {"scope": "etc.po16_lo","foreground": "var(po16_lo)",},
     {"scope": "etc.po16_hi","foreground": "var(po16_hi)",},
