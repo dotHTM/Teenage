@@ -136,27 +136,27 @@
     {
       "scope": "entity.name",
       "foreground": "var(po28_shadow)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.other.inherited-class",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.name.section",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.name.tag",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.other.attribute-name",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "variable",
@@ -168,13 +168,13 @@
     },
     {
       "scope": "variable.language",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "variable.parameter",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "variable.function",
@@ -184,32 +184,32 @@
     {
       "scope": "constant",
       "foreground": "var(po33_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.numeric",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.language",
       "foreground": "var(po35_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.character.escape",
       "foreground": "var(po35_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "storage.type",
       "foreground": "var(po14_shadow)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "storage.modifier - meta",
       "foreground": "var(po35_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
@@ -223,27 +223,27 @@
     {
       "scope": "keyword, meta storage ",
       "foreground": "var(po20_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.control",
       "foreground": "var(po35_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.operator",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.declaration",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "string",
       "foreground": "color(var(po35_lo) l(+ 10%))",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "invalid",
@@ -297,36 +297,36 @@
     {
       "scope": "markup.quote",
       "foreground": "var(po14_lo)",
-      "background": "var()",
+      // "background": "var()",
     }, 
     {
       "scope": "punctuation.definition.list_item",
       "foreground": "var(po33_ghostly_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
 
     {
       "scope": "markup.italic",
       "foreground": "var(gold_lo)",
-      "background": "var()",
+      // "background": "var()",
     },
 
     {
       "scope": "markup.bold",
       "foreground": "var(po33_ghostly_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
 
     {
       "scope": "meta.block-level",
-      "foreground": "var()",
+      // "foreground": "var()",
       "background": "var(board)",
     },
 
   {
       "scope": "markup.raw.block",
       "foreground": "var(po33_ghostly_cardboard)",
-      "background": "var()",
+      // "background": "var()",
     },
 
 

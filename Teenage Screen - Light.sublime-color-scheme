@@ -144,23 +144,23 @@
     },
     {
       "scope": "entity.other.inherited-class",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.name.section",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.name.tag",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "entity.other.attribute-name",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "variable",
@@ -172,8 +172,8 @@
     },
     {
       "scope": "variable.language",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "meta.function.parameters variable.parameter",
@@ -184,27 +184,27 @@
     {
       "scope": "variable.function",
       "foreground": "var(po14_shadow)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant",
       "foreground": "var(po33_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.numeric",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.language",
       "foreground": "var(po35_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "constant.character.escape",
       "foreground": "var(po35_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "meta.function.perl - meta.block.perl, meta.function storage.type, meta.function entity.name.function, meta.function.parameters , meta.function.shell punctuation.section.parens",
@@ -222,7 +222,7 @@
     {
       "scope": "storage.modifier - meta",
       "foreground": "var(po35_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
@@ -236,27 +236,27 @@
     {
       "scope": "keyword, meta storage ",
       "foreground": "var(po20_shadow)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.control",
       "foreground": "var(po35_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.operator",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "keyword.declaration",
-      "foreground": "var()",
-      "background": "var()",
+      // "foreground": "var()",
+      // "background": "var()",
     },
     {
       "scope": "string",
       "foreground": "color(var(po35_hi) l(- 2%))",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "invalid",
@@ -310,30 +310,30 @@
 
     {
       "scope": "markup.quote",
-      "foreground": "var()",
+      // "foreground": "var()",
       "background": "var(po24_hi)",
     },
     {
       "scope": "punctuation.definition.list_item",
       "foreground": "var(po33_ghostly_lo)",
-      "background": "var()",
+      // "background": "var()",
       "font_style": "bold"
     },
 
     {
       "scope": "markup.italic",
-      "foreground": "var()",
+      // "foreground": "var()",
       "background": "var(po14_lo)",
     },
 
     {
       "scope": "markup.bold",
       "foreground": "var(po33_ghostly_hi)",
-      "background": "var()",
+      // "background": "var()",
     },
     {
       "scope": "markup.raw",
-      "foreground": "var()",
+      // "foreground": "var()",
       "background": "color(var(po33_ghostly_cardboard) a(50%))",
     },
 
