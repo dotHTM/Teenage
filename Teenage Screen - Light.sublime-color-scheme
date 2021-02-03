@@ -71,9 +71,6 @@
     "background": "var(screen_white_hi_light)",
     "invisibles": "var(mid_screen_grey)",
 
-    // "gutter_foreground": "var(screen_black_lo_dark)",
-    // "gutter": "var(screen_white_hi_light)",
-
     "caret": "var(po33_ghostly_lo)",
     "block_caret": "color(var(po33_ghostly_lo) a(25%))",
 
@@ -81,7 +78,6 @@
     "selection_border": "color(var(po33_ghostly_lo) a(15%))",
     "inactive_selection": "color(var(screen_black_hi_dark) a(5%))",
     "selection_border_width": "4",
-    // "selection_corner_style": "cut", //round (the default), cut or square
 
     "line_highlight": "color(var(po33_ghostly_hi) a(10%))",
 
@@ -227,7 +223,6 @@
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
       "foreground": [
-        // "var(po16_hi)",
         "color(var(po16_shadow) l(+ 20%))",
         "color(var(po16_shadow) l(- 10%))",
       ],
@@ -339,7 +334,7 @@
 
   {
       "scope": "meta.heredoc",
-      // "foreground": "var(po33_ghostly_cardboard)",
+      // "foreground": "var()",
       "background": "color( var(po20_lo) a( 10%) )",
     },
     

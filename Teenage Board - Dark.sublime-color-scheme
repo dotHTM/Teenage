@@ -214,7 +214,6 @@
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
       "foreground": [
-        // "var(po16_lo)",
         "color(var(po16_lo) l(+ 20%))",
         "color(var(po16_shadow) l(- 10%))",
       ],
@@ -332,7 +331,7 @@
 
   {
       "scope": "meta.heredoc",
-      // "foreground": "var(po33_ghostly_cardboard)",
+      // "foreground": "var()",
       "background": "color( var(po20_lo) a( 10%) )",
     },
 
