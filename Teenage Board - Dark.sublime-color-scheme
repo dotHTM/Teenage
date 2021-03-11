@@ -307,7 +307,7 @@
     {
       "scope": "markup.italic",
       "foreground": "var(gold_lo)",
-      // "background": "var()",
+      "background": "color(var(po14_lo) a(20%))",
     },
 
     {
@@ -323,9 +323,9 @@
     },
 
   {
-      "scope": "markup.raw.block",
+      "scope": "markup.raw",
       "foreground": "var(po33_ghostly_cardboard)",
-      // "background": "var()",
+      "background": "color(var(po33_ghostly_cardboard) a(20%))",
     },
 
 

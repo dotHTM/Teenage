@@ -318,7 +318,8 @@
     {
       "scope": "markup.italic",
       // "foreground": "var()",
-      "background": "var(po14_lo)",
+      // "background": "color(var(po14_lo) )",
+      "background": "color(var(po14_lo) a(40%))",
     },
 
     {
