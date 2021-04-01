@@ -127,6 +127,10 @@
       "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
     },
+    
+
+    
+    
     {
       "scope": "entity.name",
       "foreground": "var(po28_hi)",
@@ -333,13 +337,13 @@
       "background": "color(var(po33_ghostly_cardboard) a(50%))",
     },
 
-  {
-      "scope": "meta.heredoc",
+    {
+      "scope": "meta.heredoc, string.quoted.single.block",
       // "foreground": "var()",
       "background": "color( var(po20_lo) a( 10%) )",
     },
     
-    // load in the base colors so any automagical theme nonsense can just pick from the pallete directly
+    // load in the base colors so any theme magic can just pick from the pallete directly
     {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
     {"scope": "etc.screen_white_lo_light","foreground": "var(screen_white_lo_light)",},
     {"scope": "etc.mid_screen_grey","foreground": "var(mid_screen_grey)",},
