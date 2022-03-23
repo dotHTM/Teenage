@@ -13,56 +13,68 @@
   "variables":
   {
 
+
+    // PO 12 : 'Rythm' -> Green
+    "po12_shadow": "hsl( 164,  75%, 24%)",
+    "po12_lo": "hsl( 162,  71%, 34%)",
+    "po12_hi": "color(var(po12_lo) l(+ 30%))",
+    
+    // PO 14 : 'Sub' -> Blue
+    "po14_shadow": "hsl( 190, 100%, 28%)",
+    "po14_lo": "hsl( 191,  91%, 41%)",
+    "po14_hi": "color(var(po14_lo) l(+ 30%))",
+
+    // PO 16 : 'Factory' -> Red-salmon
+    "po16_shadow": "hsl(  15,  57%, 40%)",
+    "po16_lo": "hsl(  16,  92%, 64%)",
+    "po16_hi": "color(var(po16_lo) l(+ 30%))",
+
+    // PO 20 : 'Arcade' -> Violet
+    "po20_shadow": "hsl( 267,  54%, 35%)",
+    "po20_lo": "hsl( 267,  55%, 49%)",
+    "po20_hi": "color(var(po20_lo) l(+ 20%))",
+
+    // PO 24 : 'Office' -> Yellow
+    "po24_shadow": "hsl(  43,  59%, 50%)",
+    "po24_lo": "hsl(  43,  94%, 57%)",
+    "po24_hi": "color(var(po24_lo) l(+ 30%))",
+
+    // PO 28 : 'Robot' -> Red
+    "po28_shadow": "hsl(   4,  70%, 39%)",
+    "po28_lo": "hsl(   0,  89%, 53%)",
+    "po28_hi": "color(var(po28_lo) l(+ 30%))",
+
+    // PO 32 : 'Tonic' -> Goldish
+    "po32_hi": "hsl(   0,   0%, 96%)",
+    "po32_lo": "hsl(   0,   0%, 96%)",
+
+    // PO 33 : 'KO' -> another red
+    "po33_hi": "hsl(  10,  90%, 55%)",
+    "po33_lo": "hsl(  10,  90%, 55%)",
+    "po33_knob": "hsl( 150,   1%, 49%)",
+
+    // PO 33 : 'ghostly' -> pink
+    "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
+    "po33_ghostly_lo": "rgb(  250,  45, 112) ",
+    "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
+
+    // PO 35 : 'speak' -> cyan
+    "po35_hi": "hsl( 182,  77%, 32%)",
+    "po35_lo": "hsl( 182,  77%, 32%)",
+
+    // greyscales
+    "button_click_dark": "hsl( 180,   1%, 24%)",
+    "button_case_light": "hsl(  90,   2%, 79%)",
     "screen_white_hi_light": "hsl( 204,  10%, 87%)",
     "screen_white_lo_light": "hsl( 200,   9%, 80%)",
     "mid_screen_grey": "hsl( 195,   5%, 69%)",
     "screen_black_hi_dark": "hsl( 210,   1%, 31%)",
     "screen_black_lo_dark": "hsl( 180,   2%,  8%)",
-
     "board_dark": "hsl(   0,   0%, 14%)",
 
+    // gold
     "gold_hi": "hsl(  36,  85%, 74%)",
     "gold_lo": "hsl(  37,  60%, 64%)",
-
-
-    "po12_shadow": "hsl( 164,  75%, 24%)",
-    "po12_lo": "hsl( 162,  71%, 34%)",
-    "po12_hi": "color(var(po12_lo) l(+ 30%))",
-
-    "po14_shadow": "hsl( 190, 100%, 28%)",
-    "po14_lo": "hsl( 191,  91%, 41%)",
-    "po14_hi": "color(var(po14_lo) l(+ 30%))",
-
-    "po16_shadow": "hsl(  15,  57%, 40%)",
-    "po16_lo": "hsl(  16,  92%, 64%)",
-    "po16_hi": "color(var(po16_lo) l(+ 30%))",
-
-    "po20_shadow": "hsl( 267,  54%, 35%)",
-    "po20_lo": "hsl( 267,  55%, 49%)",
-    "po20_hi": "color(var(po20_lo) l(+ 20%))",
-
-    "po24_shadow": "hsl(  43,  59%, 50%)",
-    "po24_lo": "hsl(  43,  94%, 57%)",
-    "po24_hi": "color(var(po24_lo) l(+ 30%))",
-
-    "po28_shadow": "hsl(   4,  70%, 39%)",
-    "po28_lo": "hsl(   0,  89%, 53%)",
-    "po28_hi": "color(var(po28_lo) l(+ 30%))",
-
-    "po32_hi": "hsl(   0,   0%, 96%)",
-
-    "po33_hi": "hsl(  10,  90%, 55%)",
-    "po33_knob": "hsl( 150,   1%, 49%)",
-
-    "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
-    "po33_ghostly_lo": "rgb(  250,  45, 112) ",
-    "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
-
-
-    "po35_hi": "hsl( 182,  77%, 32%)",
-
-    "button_click_dark": "hsl( 180,   1%, 24%)",
-    "button_case_light": "hsl(  90,   2%, 79%)",
 
   },
   "globals":
