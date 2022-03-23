@@ -128,9 +128,6 @@
 
   "rules": [
     
-    
-    
-    
     {
       "scope": "comment",
       "foreground": "var(gold_hi)",
@@ -141,10 +138,40 @@
       "scope": "punctuation",
       "foreground": "var(button_case)",
     },
+
     {
       "scope": "string punctuation",
       "foreground": "var(gold_lo)",
     },
+    
+    {
+      "scope": "meta.mapping.key",
+      "foreground": "var(po16_hi)",
+    },  
+      {
+      "scope": "meta.mapping.value",
+      "foreground": "var(po20_hi)",
+    },
+    
+    {
+      "scope": "constant",
+      "foreground": "var(po33_lo)",
+    },
+    {
+      "scope": "meta.mapping.key constant, meta.mapping.value constant",
+      "background": "color(var(po20_hi) a(30%))",
+    },
+    
+    
+    {
+      "scope": "string - meta.mapping.key - meta.mapping.value",
+      "foreground": "color(var(po35_lo) l(+ 10%))",
+    },
+    {
+      "scope": "meta.mapping.key string, meta.mapping.value string",
+      "background": "color(var(po35_lo) a(17%))",
+    },
+    
     {
       "scope": "entity.name",
       "foreground": "var(po28_shadow)",
@@ -193,16 +220,8 @@
       "foreground": "var(po14_lo)",
       "background": "var(board)",
     },
-    {
-      "scope": "constant",
-      "foreground": "var(po33_lo)",
-      // "background": "var()",
-    },
-    // {
-    //   "scope": "constant.numeric",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
+
+    
     {
       "scope": "constant.language",
       "foreground": "var(po35_lo)",
@@ -251,11 +270,9 @@
     //   // "foreground": "var()",
     //   // "background": "var()",
     // },
-    {
-      "scope": "string",
-      "foreground": "color(var(po35_lo) l(+ 10%))",
-      // "background": "var()",
-    },
+    
+    
+
     {
       "scope": "invalid",
       "foreground": "var(po24_lo)",
@@ -349,7 +366,6 @@
 
 
     
-
     // load in the base colors so any theme magic can just pick from the pallete directly
     {"scope": "etc.po12_shadow","foreground": "var(po12_shadow)",},
     {"scope": "etc.po12_lo","foreground": "var(po12_lo)",},

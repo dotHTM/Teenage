@@ -141,7 +141,39 @@
       "font_style": "bold"
     },
     
-
+  {
+      "scope": "meta.mapping.key",
+      "foreground": "var(po16_shadow)",
+    },  
+      {
+      "scope": "meta.mapping.value",
+      "foreground": "var(po20_lo)",
+    },
+    
+    
+        {
+      "scope": "string - meta.mapping.key - meta.mapping.value",
+      "foreground": "color(var(po35_hi) l(- 2%))",
+      // "background": "var()",
+    },
+    {
+      "scope": "meta.mapping.key string, meta.mapping.value string",
+      "background": "color(var(po35_lo) a(17%))",
+    },
+    
+    {
+      "scope": "constant",
+      "foreground": "var(po33_hi)",
+      // "background": "var()",
+    },
+    {
+      "scope": "constant - meta.mapping.key - meta.mapping.value",
+      "foreground": "var(po16_hi)",
+    },
+    {
+      "scope": "meta.mapping.key constant, meta.mapping.value constant",
+      "background": "color(var(po20_hi) a(40%))",
+    },
     
     
     {
@@ -199,16 +231,7 @@
       "foreground": "var(po14_shadow)",
       // "background": "var()",
     },
-    {
-      "scope": "constant",
-      "foreground": "var(po33_hi)",
-      // "background": "var()",
-    },
-    // {
-    //   "scope": "constant.numeric",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
+  
     {
       "scope": "constant.language",
       "foreground": "var(po35_hi)",
@@ -265,11 +288,6 @@
     //   // "foreground": "var()",
     //   // "background": "var()",
     // },
-    {
-      "scope": "string",
-      "foreground": "color(var(po35_hi) l(- 2%))",
-      // "background": "var()",
-    },
     {
       "scope": "invalid",
       "foreground": "var(po24_shadow)",
@@ -355,6 +373,9 @@
       // "foreground": "var()",
       "background": "color( var(po20_lo) a( 10%) )",
     },
+    
+  
+    
     
     // load in the base colors so any theme magic can just pick from the pallete directly
     {"scope": "etc.screen_white_hi_light","foreground": "var(screen_white_hi_light)",},
