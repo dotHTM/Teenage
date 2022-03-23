@@ -95,7 +95,7 @@
 
     "highlight": "color(var(po33_ghostly_hi) a(40%))",
     "find_highlight": "var(screen_white_lo_light)",
-    "find_highforeground_light": "color(var(screen_black_lo_dark) a(33%))",
+    // "find_highforeground_light": "color(var(screen_black_lo_dark) a(33%))",
 
     "guide": "color(var(screen_black_lo_dark) a(33%))",
     "active_guide": "var(screen_black_lo_dark)",
@@ -130,9 +130,10 @@
       "background": "var(screen_white_lo_light)",
       "font_style": "italic ",
     },
-    {
-      "foreground": "var(screen_black_hi_dark)",
-    },
+    // {
+      
+    //   "foreground": "var(screen_black_hi_dark)",
+    // },
     {
       "scope": "punctuation.definition.tag",
       "foreground": "var(gold_hi)",
@@ -154,26 +155,26 @@
       "foreground": "var(po28_shadow)",
       "font_style": "bold"
     },
-    {
-      "scope": "entity.other.inherited-class",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
-    {
-      "scope": "entity.name.section",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
-    {
-      "scope": "entity.name.tag",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
-    {
-      "scope": "entity.other.attribute-name",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
+    // {
+    //   "scope": "entity.other.inherited-class",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
+    // {
+    //   "scope": "entity.name.section",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
+    // {
+    //   "scope": "entity.name.tag",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
+    // {
+    //   "scope": "entity.other.attribute-name",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
     {
       "scope": "variable",
       "foreground": [
@@ -182,11 +183,11 @@
       ],
       "background": "color(hsl( 195,   5%, 69%) a(25%))",
     },
-    {
-      "scope": "variable.language",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
+    // {
+    //   "scope": "variable.language",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
     {
       "scope": "meta.function.parameters variable.parameter",
       "foreground": "var(gold_lo)",
@@ -203,11 +204,11 @@
       "foreground": "var(po33_hi)",
       // "background": "var()",
     },
-    {
-      "scope": "constant.numeric",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
+    // {
+    //   "scope": "constant.numeric",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
     {
       "scope": "constant.language",
       "foreground": "var(po35_hi)",
@@ -254,16 +255,16 @@
       "foreground": "var(po35_hi)",
       // "background": "var()",
     },
-    {
-      "scope": "keyword.operator",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
-    {
-      "scope": "keyword.declaration",
-      // "foreground": "var()",
-      // "background": "var()",
-    },
+    // {
+    //   "scope": "keyword.operator",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
+    // {
+    //   "scope": "keyword.declaration",
+    //   // "foreground": "var()",
+    //   // "background": "var()",
+    // },
     {
       "scope": "string",
       "foreground": "color(var(po35_hi) l(- 2%))",
