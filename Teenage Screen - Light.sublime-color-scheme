@@ -13,7 +13,6 @@
   "variables":
   {
 
-
     // PO 12 : 'Rythm' -> Green
     "po12_shadow": "hsl( 164,  75%, 24%)",
     "po12_lo": "hsl( 162,  71%, 34%)",
@@ -142,24 +141,25 @@
     },
     
   {
-      "scope": "meta.mapping.key",
+      "scope": "meta.mapping.key, meta.tag.key",
       "foreground": "var(po16_shadow)",
     },  
       {
-      "scope": "meta.mapping.value",
+      "scope": "meta.mapping.value, source.toml string",
       "foreground": "var(po20_lo)",
     },
     
     
         {
-      "scope": "string - meta.mapping.key - meta.mapping.value",
+      "scope": "string - meta.mapping.key - meta.tag.key - meta.mapping.value",
       "foreground": "color(var(po35_hi) l(- 2%))",
       // "background": "var()",
     },
     {
-      "scope": "meta.mapping.key string, meta.mapping.value string",
+      "scope": "meta.mapping.key string, meta.mapping.value string, meta.tag.key, source.toml string",
       "background": "color(var(po35_lo) a(17%))",
     },
+    
     
     {
       "scope": "constant",
@@ -177,7 +177,7 @@
     
     
     {
-      "scope": "entity.name",
+      "scope": "entity.name - meta.tag.key",
       "foreground": "var(po28_hi)",
       "background": "var(screen_black_lo_dark)",
       "font_style": "bold"
@@ -242,18 +242,11 @@
       "foreground": "var(po35_hi)",
       // "background": "var()",
     },
-    {
-      "scope": "entity.name",
-      "background": "var(screen_black_lo_dark)",
-      "font_style": "bold"
-    },
+
     {
       "scope": "storage.type",
       "foreground": "var(po14_lo)",
     },
-
-
-
 
     {
       "scope": "storage.modifier - meta",
