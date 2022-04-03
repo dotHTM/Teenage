@@ -143,32 +143,32 @@
       "scope": "string punctuation",
       "foreground": "var(gold_lo)",
     },
-    
-    {
-      "scope": "meta.mapping.key, meta.tag.key",
-      "foreground": "var(po16_hi)",
-    },  
-      {
-      "scope": "meta.mapping.value",
-      "foreground": "var(po20_hi)",
-    },
-    
+
     {
       "scope": "constant",
       "foreground": "var(po33_lo)",
     },
+    
+    {
+      "scope": "meta.mapping.key, meta.tag.key, entity.name.tag.yaml",
+      "foreground": "var(po16_hi)",
+    },  
+      {
+      "scope": "meta.mapping.value, source.toml string, source.yaml string.unquoted.plain.out.yaml",
+      "foreground": "var(po20_hi)",
+    },
+    
     {
       "scope": "meta.mapping.key constant, meta.mapping.value constant",
       "background": "color(var(po20_hi) a(30%))",
     },
     
-    
     {
-      "scope": "string - meta.mapping.key - meta.tag.key - meta.mapping.value",
+      "scope": "string - meta.mapping.key - meta.tag.key - meta.mapping.value - source.yaml string.unquoted.plain.out.yaml",
       "foreground": "color(var(po35_lo) l(+ 10%))",
     },
     {
-      "scope": "meta.mapping.key string, meta.mapping.value string, meta.tag.key, source.toml string",
+      "scope": "meta.mapping.key string, meta.mapping.value string, meta.tag.key, source.toml string, entity.name.tag.yaml, source.yaml string.quoted.double.yaml, source.yaml string.unquoted.plain.out.yaml",
       "background": "color(var(po35_lo) a(17%))",
     },
 
