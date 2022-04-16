@@ -145,7 +145,7 @@
     },
 
     {
-      "scope": "constant",
+      "scope": "constant, constant.numeric",
       "foreground": "var(po33_lo)",
     },
     

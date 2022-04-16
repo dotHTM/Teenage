@@ -161,13 +161,13 @@
     },
     
     {
-      "scope": "constant",
-      "foreground": "var(po33_hi)",
-      // "background": "var()",
-    },
-    {
       "scope": "constant - meta.mapping.key - meta.mapping.value",
       "foreground": "var(po16_hi)",
+    },
+    {
+      "scope": "constant, constant.numeric",
+      "foreground": "var(po33_hi)",
+      // "background": "var()",
     },
     {
       "scope": "meta.mapping.key constant, meta.mapping.value constant",
