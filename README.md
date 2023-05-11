@@ -9,22 +9,6 @@ Adds the following color schemes:
 
 ![Preview](Preview@2x.png)
 
-## recommended Preferences
-
-```json
-"line_padding_top": 2,
-"line_padding_bottom": 2,
-```
-
-### Teenage Screen - Light
-
-Consider a bold or heavy font, such as:
-
-```json
-"font_face": "SFMono-Heavy",
-```
-
-
 ## Installation
 
 ### Sublime Text
