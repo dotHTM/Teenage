@@ -16,7 +16,7 @@
     "po12_shadow": "hsl( 164,  75%, 24%)",
     "po12_lo": "hsl( 162,  71%, 34%)",
     "po12_hi": "color(var(po12_lo) l(+ 10%))",
-    
+
     // PO 14 : 'Sub' -> Blue
     "po14_shadow": "hsl( 190, 100%, 28%)",
     "po14_lo": "hsl( 191,  91%, 41%)",
@@ -127,7 +127,7 @@
   },
 
   "rules": [
-    
+
     {
       "scope": "comment",
       "foreground": "var(gold_hi)",
@@ -148,21 +148,21 @@
       "scope": "constant, constant.numeric",
       "foreground": "var(po33_lo)",
     },
-    
+
     {
       "scope": "meta.mapping.key, meta.tag.key, entity.name.tag.yaml",
       "foreground": "var(po16_hi)",
-    },  
+    },
       {
       "scope": "meta.mapping.value, source.toml string, source.yaml string.unquoted.plain.out.yaml",
       "foreground": "var(po20_hi)",
     },
-    
+
     {
       "scope": "meta.mapping.key constant, meta.mapping.value constant",
       "background": "color(var(po20_hi) a(30%))",
     },
-    
+
     {
       "scope": "string - meta.mapping.key - meta.tag.key - meta.mapping.value - source.yaml string.unquoted.plain.out.yaml",
       "foreground": "color(var(po35_lo) l(+ 10%))",
@@ -221,7 +221,7 @@
       "background": "var(board)",
     },
 
-    
+
     {
       "scope": "constant.language",
       "foreground": "var(po35_lo)",
@@ -270,8 +270,8 @@
     //   // "foreground": "var()",
     //   // "background": "var()",
     // },
-    
-    
+
+
 
     {
       "scope": "invalid",
@@ -284,7 +284,7 @@
       "background": "color(var(po28_shadow) l(- 20%))",
     },
     // Markup Headers
-    { // Default header style 
+    { // Default header style
       "scope": "markup.heading",
       "foreground": "var(po32_hi)",
       "background": "var(screen_black_hi)",
@@ -326,7 +326,7 @@
       "scope": "markup.quote",
       "foreground": "var(po14_lo)",
       // "background": "var()",
-    }, 
+    },
     {
       "scope": "punctuation.definition.list_item",
       "foreground": "var(po33_ghostly_lo)",
@@ -365,7 +365,7 @@
     },
 
 
-    
+
     // load in the base colors so any theme magic can just pick from the pallete directly
     {"scope": "etc.po12_shadow","foreground": "var(po12_shadow)",},
     {"scope": "etc.po12_lo","foreground": "var(po12_lo)",},

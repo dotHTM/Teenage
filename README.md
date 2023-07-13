@@ -27,7 +27,7 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 #### Installation via git
 
 1. Find your Packages folder with *Browse Packages* from the Command Palette.
-2. Clone <https://github.com/dotHTM/Teenage.git> into your Packages folder 
+2. Clone <https://github.com/dotHTM/Teenage.git> into your Packages folder
 
 #### Manual Installation
 
@@ -38,4 +38,3 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 ## License
 
 License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/blob/master/LICENSE).
-
