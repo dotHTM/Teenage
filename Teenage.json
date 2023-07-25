@@ -66,12 +66,12 @@
     "red": "var(po28)",
     "neonred": "Neon(var(po28))",
 
-    // PO 32 : 'Tonic' -> white
+    // PO 32 : 'Tonic' -> lightgrey
     "po32": "BaseAdjust(hsl(   0,   0%, 96%))",
 
     "tonic": "var(po32)",
-    "white": "var(po32)",
-    "neonwhite": "Neon(var(po32))",
+    "lightgrey": "var(po32)",
+    "neonlightgrey": "Neon(var(po32))",
 
     // PO 33 : 'KO' -> another red
     "po33": "BaseAdjust(hsl(  10,  90%, 55%))",
@@ -258,8 +258,8 @@
       "name": "Operators",
       "scope": "keyword.operator | keyword.operator.assignment | punctuation.separator.annotation.return | punctuation.separator.key-value",
       "foreground": {
-        "light":"var(black)",
-        "dark":"var(white)"
+        "light":"black",
+        "dark":"white"
       },
     },
 
@@ -272,8 +272,8 @@
       "scope": "meta.statement.import",
 
           "foreground": {
-      "light":"var(black)",
-      "dark":"var(white)",
+      "light":"black",
+      "dark":"white",
       },
       // "background": "BackgroundAccent(var(yellow))",
 
@@ -286,8 +286,8 @@
       "name": "Library class/type",
       "scope": "(support.type | support.class) - meta.property-name",
            "foreground": {
-      "light":"var(black)",
-      "dark":"var(white)",
+      "light":"black",
+      "dark":"white",
       },
       // "background": "BackgroundAccent(var(yellow))",
 

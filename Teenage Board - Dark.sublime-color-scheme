@@ -1,5 +1,5 @@
 {
-  "name": "Teenage - dark, rainbow, multi",
+  "name": "Teenage - dark",
   "author": "Michael Cramer",
   "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments.",
   "variables": {
@@ -30,8 +30,8 @@
     "neonred": "color(var(po28) l(60%))",
     "po32": "color(hsl(   0,   0%, 96%) l(+ 15%))",
     "tonic": "var(po32)",
-    "white": "var(po32)",
-    "neonwhite": "color(var(po32) l(60%))",
+    "lightgrey": "var(po32)",
+    "neonlightgrey": "color(var(po32) l(60%))",
     "po33": "color(hsl(  10,  90%, 55%) l(+ 15%))",
     "ko": "var(po33)",
     "punch": "var(po33)",
@@ -136,17 +136,17 @@
       "name": "HTML tags"
     },
     {
-      "foreground": "var(white)",
+      "foreground": "white",
       "scope": "keyword.operator | keyword.operator.assignment | punctuation.separator.annotation.return | punctuation.separator.key-value",
       "name": "Operators"
     },
     {
-      "foreground": "var(white)",
+      "foreground": "white",
       "scope": "meta.statement.import",
       "name": "Imports"
     },
     {
-      "foreground": "var(white)",
+      "foreground": "white",
       "scope": "(support.type | support.class) - meta.property-name",
       "name": "Library class/type"
     },
@@ -490,14 +490,14 @@
       "foreground": "var(tonic)"
     },
     {
-      "scope": "etc.white",
-      "name": "Automagical import white",
-      "foreground": "var(white)"
+      "scope": "etc.lightgrey",
+      "name": "Automagical import lightgrey",
+      "foreground": "var(lightgrey)"
     },
     {
-      "scope": "etc.neonwhite",
-      "name": "Automagical import neonwhite",
-      "foreground": "var(neonwhite)"
+      "scope": "etc.neonlightgrey",
+      "name": "Automagical import neonlightgrey",
+      "foreground": "var(neonlightgrey)"
     },
     {
       "scope": "etc.po33",
