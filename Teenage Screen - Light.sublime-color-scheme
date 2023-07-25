@@ -1,541 +1,653 @@
 {
-  "name": "Teenage Board_dark (Dark)",
+  "name": "Teenage - light, rainbow, multi",
   "author": "Michael Cramer",
-  "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments",
-
-  "recommended_preferences":
-  {
-    "line_padding_top": 2,
-    "line_padding_bottom": 2,
-    "font_face": "SFMono-Heavy",
+  "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments.",
+  "variables": {
+    "po12": "color(hsl( 162,  71%, 34%) l(- 15%))",
+    "rythm": "var(po12)",
+    "green": "var(po12)",
+    "neongreen": "color(var(po12) l(60%))",
+    "po14": "color(hsl( 191,  91%, 41%) l(- 15%))",
+    "sub": "var(po14)",
+    "blue": "var(po14)",
+    "neonblue": "color(var(po14) l(60%))",
+    "po16": "color(hsl(  16,  92%, 64%) l(- 15%))",
+    "factory": "var(po16)",
+    "salmon": "var(po16)",
+    "orange": "var(po16)",
+    "neonorange": "color(var(po16) l(60%))",
+    "po20": "color(hsl( 267,  55%, 64%) l(- 15%))",
+    "arcade": "var(po20)",
+    "violet": "var(po20)",
+    "neonviolet": "color(var(po20) l(60%))",
+    "po24": "color(hsl(  43,  94%, 57%) l(- 15%))",
+    "office": "var(po24)",
+    "yellow": "var(po24)",
+    "neonyellow": "color(var(po24) l(60%))",
+    "po28": "color(hsl(   0,  89%, 53%) l(- 15%))",
+    "robot": "var(po28)",
+    "red": "var(po28)",
+    "neonred": "color(var(po28) l(60%))",
+    "po32": "color(hsl(   0,   0%, 96%) l(- 15%))",
+    "tonic": "var(po32)",
+    "white": "var(po32)",
+    "neonwhite": "color(var(po32) l(60%))",
+    "po33": "color(hsl(  10,  90%, 55%) l(- 15%))",
+    "ko": "var(po33)",
+    "punch": "var(po33)",
+    "neonpunch": "color(var(po33) l(60%))",
+    "po33ghostly": "color(rgb(  250,  45, 112) l(- 15%))",
+    "ghostly": "var(po33ghostly)",
+    "pink": "var(po33ghostly)",
+    "neonpink": "color(var(po33ghostly) l(60%))",
+    "po35": "color(hsl( 182,  77%, 32%) l(- 15%))",
+    "speak": "var(po35)",
+    "cyan": "var(po35)",
+    "neoncyan": "color(var(po35) l(60%))",
+    "po137": "color(hsl(91, 100%, 30%) l(- 15%))",
+    "science": "var(po137)",
+    "lime": "var(po137)",
+    "neonlime": "color(var(po137) l(60%))",
+    "cardboard": "rgb(  207,  163, 118) ",
+    "board": "hsl(   0,  0%,  10% )",
+    "lcd": "hsl( 195,  3%, 25% )",
+    "button": "hsl( 180,  6%, 50% )",
+    "steel": "hsl(  0,  0%, 80% )",
+    "screen": "hsl( 200, 12%, 90% )",
+    "gold": "hsl(  36,  85%, 74%)",
+    "_cursor": "var(ghostly)",
+    "_heading_1": "color(var(po28) l(60%))",
+    "_heading_2": "color(var(po16) l(60%))",
+    "_heading_3": "color(var(po24) l(60%))",
+    "_heading_4": "color(var(po12) l(60%))",
+    "_heading_5": "color(var(po14) l(60%))",
+    "_heading_6": "color(var(po20) l(60%))"
   },
-
-  "variables":
-  {
-
-    // PO 12 : 'Rythm' -> Green
-    "po12_shadow": "hsl( 164,  75%, 24%)",
-    "po12_lo": "hsl( 162,  71%, 34%)",
-    "po12_hi": "color(var(po12_lo) l(+ 30%))",
-
-    // PO 14 : 'Sub' -> Blue
-    "po14_shadow": "hsl( 190, 100%, 28%)",
-    "po14_lo": "hsl( 191,  91%, 41%)",
-    "po14_hi": "color(var(po14_lo) l(+ 30%))",
-
-    // PO 16 : 'Factory' -> Red-salmon
-    "po16_shadow": "hsl(  15,  57%, 40%)",
-    "po16_lo": "hsl(  16,  92%, 64%)",
-    "po16_hi": "color(var(po16_lo) l(+ 30%))",
-
-    // PO 20 : 'Arcade' -> Violet
-    "po20_shadow": "hsl( 267,  54%, 35%)",
-    "po20_lo": "hsl( 267,  55%, 49%)",
-    "po20_hi": "color(var(po20_lo) l(+ 20%))",
-
-    // PO 24 : 'Office' -> Yellow
-    "po24_shadow": "hsl(  43,  59%, 50%)",
-    "po24_lo": "hsl(  43,  94%, 57%)",
-    "po24_hi": "color(var(po24_lo) l(+ 30%))",
-
-    // PO 28 : 'Robot' -> Red
-    "po28_shadow": "hsl(   4,  70%, 39%)",
-    "po28_lo": "hsl(   0,  89%, 53%)",
-    "po28_hi": "color(var(po28_lo) l(+ 30%))",
-
-    // PO 32 : 'Tonic' -> Goldish
-    "po32_hi": "hsl(   0,   0%, 96%)",
-    "po32_lo": "hsl(   0,   0%, 96%)",
-
-    // PO 33 : 'KO' -> another red
-    "po33_hi": "hsl(  10,  90%, 55%)",
-    "po33_lo": "hsl(  10,  90%, 55%)",
-    "po33_knob": "hsl( 150,   1%, 49%)",
-
-    // PO 33 : 'ghostly' -> pink
-    "po33_ghostly_hi": "color(var(po33_ghostly_lo) l(+ 10%))",
-    "po33_ghostly_lo": "rgb(  250,  45, 112) ",
-    "po33_ghostly_cardboard": "rgb(  207,  163, 118) ",
-
-    // PO 35 : 'speak' -> cyan
-    "po35_hi": "hsl( 182,  77%, 32%)",
-    "po35_lo": "hsl( 182,  77%, 32%)",
-
-    // greyscales
-    "button_click_dark": "hsl( 180,   1%, 24%)",
-    "button_case_light": "hsl(  90,   2%, 79%)",
-    "screen_white_hi_light": "hsl( 204,  10%, 87%)",
-    "screen_white_lo_light": "hsl( 200,   9%, 80%)",
-    "mid_screen_grey": "hsl( 195,   5%, 69%)",
-    "screen_black_hi_dark": "hsl( 210,   1%, 31%)",
-    "screen_black_lo_dark": "hsl( 180,   2%,  8%)",
-    "board_dark": "hsl(   0,   0%, 14%)",
-
-    // gold
-    "gold_hi": "hsl(  36,  85%, 74%)",
-    "gold_lo": "hsl(  37,  60%, 64%)",
-
-  },
-  "globals":
-  {
-    "foreground": "var(screen_black_lo_dark)",
-    "background": "var(screen_white_hi_light)",
-    "invisibles": "var(mid_screen_grey)",
-
-    "caret": "var(po33_ghostly_lo)",
-    "block_caret": "color(var(po33_ghostly_lo) a(25%))",
-
-    "selection": "color(var(po33_ghostly_lo) a(15%))",
-    "selection_border": "color(var(po33_ghostly_lo) a(15%))",
-    "inactive_selection": "color(var(screen_black_hi_dark) a(5%))",
+  "globals": {
     "selection_border_width": "4",
-
-    "line_highlight": "color(var(po33_ghostly_hi) a(10%))",
-
-    "highlight": "color(var(po33_ghostly_hi) a(40%))",
-    "find_highlight": "var(screen_white_lo_light)",
-    // "find_highforeground_light": "color(var(screen_black_lo_dark) a(33%))",
-
-    "guide": "color(var(screen_black_lo_dark) a(33%))",
-    "active_guide": "var(screen_black_lo_dark)",
-    "stack_guide": "color(var(screen_black_lo_dark) a(33%))",
-
-    "misspelling": "var(po28_shadow)",
-    "fold_marker": "var(gold_hi)",
-    "minimap_border": "var(button_case_light)",
-    "accent": "var(gold_lo)",
-
-    "brackets_options": "squiggly_underline bold",
-    "brackets_foreground": "var(po28_lo)",
-    "bracket_contents_foreground": "var(po20_lo)",
-    "bracket_contents_options": "underline bold",
-
-    "tags_options": "squiggly_underline bold",
-    "tags_foreground": "var(po14_lo)",
-
-    "line_diff_added": "var(po12_hi)",
-    "line_diff_modified": "var(po20_hi)",
-    "line_diff_deleted": "var(po28_hi)",
     "line_diff_width": "8",
-
-    "shadow": "color(var(screen_black_hi_dark) a(25%))",
     "shadow_width": "24",
+    "brackets_options": "squiggly_underline bold",
+    "bracket_contents_options": "underline bold",
+    "tags_options": "squiggly_underline bold",
+    "foreground": "var(lcd)",
+    "background": "var(screen)",
+    "invisibles": "var(steel)",
+    "shadow": "var(button)",
+    "caret": "var(_cursor)",
+    "block_caret": "var(_cursor)",
+    "selection": "color(var(_cursor) a(33%))",
+    "selection_border": "var(_cursor)",
+    "line_highlight": "color(var(_cursor) a(20%))",
+    "highlight": "var(_cursor)",
+    "misspelling": "var(robot)",
+    "fold_marker": "var(gold)",
+    "brackets_foreground": "var(robot)",
+    "bracket_contents_foreground": "var(arcade)",
+    "tags_foreground": "var(sub)",
+    "line_diff_added": "var(rythm)",
+    "line_diff_modified": "var(arcade)",
+    "line_diff_deleted": "var(punch)",
+    "inactive_selection": "var(button)",
+    "find_highlight": "var(button)",
+    "guide": "var(steel)",
+    "active_guide": "var(_cursor)",
+    "stack_guide": "var(button)",
+    "minimap_border": "var(button)",
+    "accent": "var(button)"
   },
-
   "rules": [
     {
-      "scope": "comment", // Hello world
-      "foreground": "var(gold_hi)",
-      "background": "var(board_dark)",
-      "selection_foreground": "var(po24_hi)"
+      "foreground": "var(gold)",
+      "background": "var(board)",
+      "font_style": "italic",
+      "scope": "comment | punctuation.definition.comment",
+      "name": "Comment"
     },
     {
-      "scope": "comment punctuation", // <- only this
-      "foreground": "var(gold_lo)",
-      "background": "var(board_dark)",
-      "selection_foreground": "var(po24_hi)"
-    },
-
-
-
-
-    {
-      "scope": "punctuation.definition.tag",
-      "foreground": "var(po16_lo)",
-      "font_style": "bold"
-    },
-
-    {
-      "scope": "entity.name - meta.tag.key - source.yaml",
-      "foreground": "var(po16_shadow)",
-      "font_style": "bold"
-    },
-
-    {
-      "scope": "meta.tag - meta.embedded - meta.interpolation - source.liquid",
-      "background": "color(var(screen_white_lo_light) blend(var(po16_lo) 93%))"
-    },
-
-
-
- {
-      "scope": "punctuation.section.embedded, punctuation.section.interpolation",
-      "foreground": "var(po20_lo)",
-      "font_style": "bold"
-    },
-    {
-      "scope": "meta.embedded, meta.interpolation, source.liquid",
-      "background": "color(var(screen_white_lo_light) blend(var(po12_lo) 93%))"
-    },
-
-
-
-    {
-      "scope": "meta.mapping.key, meta.tag.key, entity.name.tag.yaml",
-      "foreground": "var(po16_shadow)",
-    },
-    {
-      "scope": "meta.mapping.value, source.toml string, source.yaml string.unquoted.plain.out.yaml",
-      "foreground": "var(po20_lo)",
-    },
-
-
-    {
-      "scope": "string - meta.mapping.key - meta.tag.key - meta.mapping.value - source.yaml string.unquoted.plain.out.yaml",
-      "foreground": "color(var(po35_hi) l(- 2%))",
-      // "background": "var()",
-    },
-    {
-      "scope": "meta.mapping.key string, meta.mapping.value string, meta.tag.key, source.toml string, entity.name.tag.yaml, source.yaml string.quoted.double.yaml, source.yaml string.unquoted.plain.out.yaml",
-      "background": "color(var(po35_lo) a(17%))",
-    },
-
-    {
-      "scope": "constant - meta.mapping.key - meta.mapping.value",
-      "foreground": "var(po16_hi)",
-    },
-    {
-      "scope": "constant, constant.numeric",
-      "foreground": "var(po33_hi)",
-      // "background": "var()",
-    },
-    {
-      "scope": "meta.mapping.key constant, meta.mapping.value constant",
-      "background": "color(var(po20_hi) a(40%))",
-    },
-
-
-
-    {
-      "scope": "punctuation.separator",
-      "foreground": "var(po28_shadow)",
-      "font_style": "bold"
-    },
-    // {
-    //   "scope": "entity.other.inherited-class",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    // {
-    //   "scope": "entity.name.section",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    // {
-    //   "scope": "entity.name.tag",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    // {
-    //   "scope": "entity.other.attribute-name",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    {
-      "scope": "variable",
-      "background": "color(hsl( 195,   5%, 69%) a(25%))",
-      "foreground": [
-        "color(var(po12_shadow) )",
-        "var(po12_shadow)",
-      ],
-    },
-
-
-    // {
-    //   "scope": "variable.language",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    {
-      "scope": "meta.function.parameters variable.parameter",
-      "foreground": "var(gold_lo)",
-      "background": "var(screen_black_lo_dark)",
-      "font_style": "bold"
-    },
-    {
-      "scope": "variable.function",
-      "foreground": "var(po14_shadow)",
-      // "background": "var()",
-    },
-
-    {
-      "scope": "constant.language",
-      "foreground": "var(po35_hi)",
-      // "background": "var()",
-    },
-    {
-      "scope": "constant.character.escape",
-      "foreground": "var(po35_hi)",
-      // "background": "var()",
-    },
-
-    {
-      "scope": "storage.type",
-      "foreground": "var(po14_lo)",
-    },
-
-    {
-      "scope": "storage.modifier - meta",
-      "foreground": "var(po35_hi)",
-      // "background": "var()",
-    },
-    {
-      "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
-      "foreground": [
-        "color(var(po16_shadow) l(+ 20%))",
-        "color(var(po16_shadow) l(- 10%))",
-      ],
-      "background": "var(screen_white_hi_light)",
-    },
-    {
-      "scope": "keyword, meta storage ",
-      "foreground": "var(po20_shadow)",
-      // "background": "var()",
-    },
-    {
-      "scope": "keyword.control",
-      "foreground": "var(po35_hi)",
-      // "background": "var()",
-    },
-    // {
-    //   "scope": "keyword.operator",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    // {
-    //   "scope": "keyword.declaration",
-    //   // "foreground": "var()",
-    //   // "background": "var()",
-    // },
-    {
-      "scope": "invalid",
-      "foreground": "var(po24_shadow)",
-      "background": "var(po28_shadow)",
-    },
-    {
-      "scope": "invalid.deprecated",
-      "foreground": "color(var(po24_hi) l(- 20%))",
-      "background": "color(var(po28_shadow) l(- 20%))",
-    },
-    // Markup Headers
-    { // Default header style
-      "scope": "markup.heading",
-      "foreground": "var(po32_hi)",
-      "background": "var(board_dark)",
       "font_style": "bold",
+      "scope": "keyword",
+      "name": "Keyword"
     },
     {
-      "scope": "markup.heading punctuation",
-      "foreground": "var(mid_screen_grey)",
+      "foreground": "var(arcade)",
+      "scope": "(keyword ) - ( keyword.operator | keyword.control.flow.return )",
+      "name": "Keyword"
     },
     {
+      "foreground": "color(var(arcade) blend(var(robot) 75% ))",
+      "scope": "keyword.control.flow.return",
+      "name": "Keyword return"
+    },
+    {
+      "foreground": "var(rythm)",
+      "scope": "keyword.control - keyword.control.flow.return",
+      "name": "Keyword Control and Loops"
+    },
+    {
+      "foreground": "var(arcade)",
+      "font_style": "bold",
+      "scope": "(meta.tag | source.css entity) - ( punctuation | meta.attribute-with-value )",
+      "name": "HTML tags"
+    },
+    {
+      "foreground": "color(var(arcade) a(50%))",
+      "scope": "meta.tag punctuation - (punctuation.separator.key-value | string)",
+      "name": "HTML tags"
+    },
+    {
+      "foreground": "var(black)",
+      "scope": "keyword.operator | keyword.operator.assignment | punctuation.separator.annotation.return | punctuation.separator.key-value",
+      "name": "Operators"
+    },
+    {
+      "foreground": "var(black)",
+      "scope": "meta.statement.import",
+      "name": "Imports"
+    },
+    {
+      "foreground": "var(black)",
+      "scope": "(support.type | support.class) - meta.property-name",
+      "name": "Library class/type"
+    },
+    {
+      "foreground": "var(yellow)",
+      "scope": "punctuation.definition.annotation | meta.function.annotation | meta.function.parameters.annotation | variable.annotation",
+      "name": "Annotation"
+    },
+    {
+      "font_style": "bold",
+      "scope": "meta.class "
+    },
+    {
+      "foreground": "var(red)",
+      "scope": "meta.class| entity.other.attribute-name.class",
+      "name": "Inherited class"
+    },
+    {
+      "foreground": "var(yellow)",
+      "scope": "entity.other.inherited-class| entity.other.attribute-name.id",
+      "name": "Inherited class"
+    },
+    {
+      "foreground": "var(robot)",
+      "font_style": "bold",
+      "scope": "entity.name.function",
+      "name": "Entity name"
+    },
+    {
+      "foreground": "var(robot)",
+      "scope": "variable.function",
+      "name": "Function call"
+    },
+    {
+      "foreground": "var(factory)",
+      "scope": "support.function, support.macro",
+      "name": "Library function"
+    },
+    {
+      "foreground": "var(orange)",
+      "scope": "(meta.mapping.key | entity.name.tag.yaml | meta.link.inline.description | meta.property-name |  entity.other.attribute-name) - punctuation"
+    },
+    {
+      "foreground": "var(speak)",
+      "background": "color(var(green) a(15%))",
+      "scope": "string - ( meta.mapping.key  | entity.name.tag.yaml ) - punctuation",
+      "name": "String"
+    },
+    {
+      "foreground": "var(red)",
+      "scope": "constant.numeric",
+      "name": "Number"
+    },
+    {
+      "foreground": "var(orange)",
+      "scope": "storage.type.numeric",
+      "name": "Number suffix"
+    },
+    {
+      "foreground": "var(yellow)",
+      "scope": "constant.language",
+      "name": "Built-in constant"
+    },
+    {
+      "foreground": "var(yellow)",
+      "scope": "constant.character | constant.other",
+      "name": "User-defined constant"
+    },
+    {
+      "foreground": [
+        "var(green)",
+        "color(var(green) blend( var(violet) 25% ))",
+        "color(var(green) l(- 10%))",
+        "color(var(green) l(+ 10%))",
+        "color(var(cyan) l(+ 10%))",
+        "color(var(blue) blend( var(violet) 25% ))",
+        "color(var(cyan) blend( var(violet) 25% ))",
+        "color(var(cyan) l(- 10%))",
+        "color(var(blue) l(+ 10%))",
+        "var(blue)",
+        "var(cyan)",
+        "color(var(blue) l(- 10%))"
+      ],
+      "scope": "( variable | qualified-name | meta.generic-name ) - ( variable.annotation | punctuation | meta.class | entity.name.function | variable.function | meta.statement.import | meta.function.annotation.return) ",
+      "name": "Variables"
+    },
+    {
+      "foreground": "var(blue)",
+      "scope": "variable.member",
+      "name": "Member Variable"
+    },
+    {
+      "foreground": "var(blue)",
+      "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
+      "name": "JavaScript Dollar"
+    },
+    {
+      "foreground": "var(arcade)",
+      "background": "color(var(speak) a(15%))",
+      "scope": "( source.yaml string.unquoted | meta.link.inline.metadata | markup.underline.link | meta.property-value) - (meta.mapping.key | punctuation )",
+      "name": "Unquoted String"
+    },
+    {
+      "background": "var(lcd)",
+      "scope": "markup.heading",
+      "name": "markup headings"
+    },
+    {
+      "foreground": "var(steel)",
+      "scope": "markup.heading punctuation.definition.heading",
+      "name": "markup headings"
+    },
+    {
+      "foreground": "var(_heading_1)",
       "scope": "markup.heading.1",
-      "foreground": "var(po28_hi)",
+      "name": "markup h1"
     },
     {
+      "foreground": "var(_heading_2)",
       "scope": "markup.heading.2",
-      "foreground": "var(po24_hi)",
+      "name": "markup h2"
     },
     {
+      "foreground": "var(_heading_3)",
       "scope": "markup.heading.3",
-      "foreground": "var(po20_hi)",
+      "name": "markup h3"
     },
     {
+      "foreground": "var(_heading_4)",
       "scope": "markup.heading.4",
-      "foreground": "var(po16_lo)",
-      "background": "var(screen_white_lo_light)",
+      "name": "markup h4"
     },
     {
+      "foreground": "var(_heading_5)",
       "scope": "markup.heading.5",
-      "foreground": "var(po14_lo)",
-      "background": "var(screen_white_lo_light)",
+      "name": "markup h5"
     },
     {
+      "foreground": "var(_heading_6)",
       "scope": "markup.heading.6",
-      "foreground": "var(po12_lo)",
-      "background": "var(screen_white_lo_light)",
+      "name": "markup h6"
     },
-
-
     {
+      "foreground": "var(science)",
+      "scope": "( meta.link | string.other.link  ) punctuation",
+      "name": "markup links"
+    },
+    {
+      "foreground": "var(science)",
+      "scope": "punctuation.definition.thematic-break",
+      "name": "markup hr"
+    },
+    {
+      "foreground": "var(ghostly)",
+      "scope": "markup.list.unnumbered.bullet | markup.list.numbered.bullet",
+      "name": "markup numbered list bullet"
+    },
+    {
+      "background": "color(var(speak) a(10%))",
       "scope": "markup.quote",
-      // "foreground": "var()",
-      "background": "var(po24_hi)",
+      "name": "markup blockquote"
     },
     {
-      "scope": "punctuation.definition.list_item",
-      "foreground": "var(po33_ghostly_lo)",
-      // "background": "var()",
-      "font_style": "bold"
-    },
-
-    {
-      "scope": "markup.italic",
-      // "foreground": "var()",
-      // "background": "color(var(po14_lo) )",
-      "background": "color(var(po14_lo) a(40%))",
-    },
-
-    {
-      "scope": "markup.bold",
-      "foreground": "var(po33_ghostly_hi)",
-      // "background": "var()",
+      "foreground": "var(speak)",
+      "scope": "markup.quote punctuation.definition.blockquote",
+      "name": "markup blockquote"
     },
     {
-      "scope": "markup.raw",
-      // "foreground": "var()",
-      "background": "color(var(po33_ghostly_cardboard) a(50%))",
-    },
-
-    {
-      "scope": "meta.heredoc, string.quoted.single.block",
-      // "foreground": "var()",
-      "background": "color( var(po20_lo) a( 10%) )",
-    },
-
-
-
-
-    // load in the base colors so any theme magic can just pick from the pallete directly
-    {
-      "scope": "etc.screen_white_hi_light",
-      "foreground": "var(screen_white_hi_light)",
+      "background": "color(color(var(steel)) a(15%) a(15%))",
+      "scope": "markup.raw ",
+      "name": "markup code"
     },
     {
-      "scope": "etc.screen_white_lo_light",
-      "foreground": "var(screen_white_lo_light)",
+      "background": "color(var(steel) a(15%))",
+      "scope": "meta.code-fence ",
+      "name": "markup code"
     },
     {
-      "scope": "etc.mid_screen_grey",
-      "foreground": "var(mid_screen_grey)",
+      "foreground": "var(cardboard)",
+      "background": "color(var(steel) a(15%))",
+      "scope": "markup.raw.inline - punctuation",
+      "name": "markup code"
     },
     {
-      "scope": "etc.screen_black_hi_dark",
-      "foreground": "var(screen_black_hi_dark)",
+      "foreground": "var(sub)",
+      "font_style": "italic",
+      "scope": "markup.italic - punctuation.definition.italic",
+      "name": "markup italic"
     },
     {
-      "scope": "etc.screen_black_lo_dark",
-      "foreground": "var(screen_black_lo_dark)",
+      "foreground": "color(var(speak) a(50%))",
+      "font_style": "italic",
+      "scope": "markup.italic punctuation.definition.italic ",
+      "name": "markup italic"
     },
     {
-      "scope": "etc.board_dark",
-      "foreground": "var(board_dark)",
+      "foreground": "var(robot)",
+      "font_style": "bold",
+      "scope": " markup.bold - punctuation.definition.bold",
+      "name": "markup bold"
     },
     {
-      "scope": "etc.gold_hi",
-      "foreground": "var(gold_hi)",
+      "foreground": "color(var(robot) a(50%))",
+      "font_style": "bold",
+      "scope": " markup.bold punctuation.definition.bold",
+      "name": "markup bold"
     },
     {
-      "scope": "etc.gold_lo",
-      "foreground": "var(gold_lo)",
+      "scope": "etc.po12",
+      "name": "Automagical import po12",
+      "foreground": "var(po12)"
     },
     {
-      "scope": "etc.po12_shadow",
-      "foreground": "var(po12_shadow)",
+      "scope": "etc.rythm",
+      "name": "Automagical import rythm",
+      "foreground": "var(rythm)"
     },
     {
-      "scope": "etc.po12_lo",
-      "foreground": "var(po12_lo)",
+      "scope": "etc.green",
+      "name": "Automagical import green",
+      "foreground": "var(green)"
     },
     {
-      "scope": "etc.po12_hi",
-      "foreground": "var(po12_hi)",
+      "scope": "etc.neongreen",
+      "name": "Automagical import neongreen",
+      "foreground": "var(neongreen)"
     },
     {
-      "scope": "etc.po14_shadow",
-      "foreground": "var(po14_shadow)",
+      "scope": "etc.po14",
+      "name": "Automagical import po14",
+      "foreground": "var(po14)"
     },
     {
-      "scope": "etc.po14_lo",
-      "foreground": "var(po14_lo)",
+      "scope": "etc.sub",
+      "name": "Automagical import sub",
+      "foreground": "var(sub)"
     },
     {
-      "scope": "etc.po14_hi",
-      "foreground": "var(po14_lo)",
+      "scope": "etc.blue",
+      "name": "Automagical import blue",
+      "foreground": "var(blue)"
     },
     {
-      "scope": "etc.po16_shadow",
-      "foreground": "var(po16_shadow)",
+      "scope": "etc.neonblue",
+      "name": "Automagical import neonblue",
+      "foreground": "var(neonblue)"
     },
     {
-      "scope": "etc.po16_lo",
-      "foreground": "var(po16_lo)",
+      "scope": "etc.po16",
+      "name": "Automagical import po16",
+      "foreground": "var(po16)"
     },
     {
-      "scope": "etc.po16_hi",
-      "foreground": "var(po16_hi)",
+      "scope": "etc.factory",
+      "name": "Automagical import factory",
+      "foreground": "var(factory)"
     },
     {
-      "scope": "etc.po20_shadow",
-      "foreground": "var(po20_shadow)",
+      "scope": "etc.salmon",
+      "name": "Automagical import salmon",
+      "foreground": "var(salmon)"
     },
     {
-      "scope": "etc.po20_lo",
-      "foreground": "var(po20_lo)",
+      "scope": "etc.orange",
+      "name": "Automagical import orange",
+      "foreground": "var(orange)"
     },
     {
-      "scope": "etc.po20_hi",
-      "foreground": "var(po20_hi)",
+      "scope": "etc.neonorange",
+      "name": "Automagical import neonorange",
+      "foreground": "var(neonorange)"
     },
     {
-      "scope": "etc.po24_shadow",
-      "foreground": "var(po24_shadow)",
+      "scope": "etc.po20",
+      "name": "Automagical import po20",
+      "foreground": "var(po20)"
     },
     {
-      "scope": "etc.po24_lo",
-      "foreground": "var(po24_lo)",
+      "scope": "etc.arcade",
+      "name": "Automagical import arcade",
+      "foreground": "var(arcade)"
     },
     {
-      "scope": "etc.po24_hi",
-      "foreground": "var(po24_hi)",
+      "scope": "etc.violet",
+      "name": "Automagical import violet",
+      "foreground": "var(violet)"
     },
     {
-      "scope": "etc.po28_shadow",
-      "foreground": "var(po28_shadow)",
+      "scope": "etc.neonviolet",
+      "name": "Automagical import neonviolet",
+      "foreground": "var(neonviolet)"
     },
     {
-      "scope": "etc.po28_lo",
-      "foreground": "var(po28_lo)",
+      "scope": "etc.po24",
+      "name": "Automagical import po24",
+      "foreground": "var(po24)"
     },
     {
-      "scope": "etc.po28_hi",
-      "foreground": "var(po28_hi)",
+      "scope": "etc.office",
+      "name": "Automagical import office",
+      "foreground": "var(office)"
     },
     {
-      "scope": "etc.po32_hi",
-      "foreground": "var(po32_hi)",
+      "scope": "etc.yellow",
+      "name": "Automagical import yellow",
+      "foreground": "var(yellow)"
     },
     {
-      "scope": "etc.po33_ghostly_hi",
-      "foreground": "var(po33_ghostly_hi)",
+      "scope": "etc.neonyellow",
+      "name": "Automagical import neonyellow",
+      "foreground": "var(neonyellow)"
     },
     {
-      "scope": "etc.po33_ghostly_lo",
-      "foreground": "var(po33_ghostly_lo)",
+      "scope": "etc.po28",
+      "name": "Automagical import po28",
+      "foreground": "var(po28)"
     },
     {
-      "scope": "etc.po33_ghostly_cardboard",
-      "foreground": "var(po33_ghostly_cardboard)",
+      "scope": "etc.robot",
+      "name": "Automagical import robot",
+      "foreground": "var(robot)"
     },
     {
-      "scope": "etc.button_click_dark",
-      "foreground": "var(button_click_dark)",
+      "scope": "etc.red",
+      "name": "Automagical import red",
+      "foreground": "var(red)"
     },
     {
-      "scope": "etc.po33_hi",
-      "foreground": "var(po33_hi)",
+      "scope": "etc.neonred",
+      "name": "Automagical import neonred",
+      "foreground": "var(neonred)"
     },
     {
-      "scope": "etc.po33_knob",
-      "foreground": "var(po33_knob)",
+      "scope": "etc.po32",
+      "name": "Automagical import po32",
+      "foreground": "var(po32)"
     },
     {
-      "scope": "etc.po35_hi",
-      "foreground": "var(po35_hi)",
+      "scope": "etc.tonic",
+      "name": "Automagical import tonic",
+      "foreground": "var(tonic)"
     },
     {
-      "scope": "etc.button_case_light",
-      "foreground": "var(button_case_light)",
+      "scope": "etc.white",
+      "name": "Automagical import white",
+      "foreground": "var(white)"
     },
-  ],
+    {
+      "scope": "etc.neonwhite",
+      "name": "Automagical import neonwhite",
+      "foreground": "var(neonwhite)"
+    },
+    {
+      "scope": "etc.po33",
+      "name": "Automagical import po33",
+      "foreground": "var(po33)"
+    },
+    {
+      "scope": "etc.ko",
+      "name": "Automagical import ko",
+      "foreground": "var(ko)"
+    },
+    {
+      "scope": "etc.punch",
+      "name": "Automagical import punch",
+      "foreground": "var(punch)"
+    },
+    {
+      "scope": "etc.neonpunch",
+      "name": "Automagical import neonpunch",
+      "foreground": "var(neonpunch)"
+    },
+    {
+      "scope": "etc.po33ghostly",
+      "name": "Automagical import po33ghostly",
+      "foreground": "var(po33ghostly)"
+    },
+    {
+      "scope": "etc.ghostly",
+      "name": "Automagical import ghostly",
+      "foreground": "var(ghostly)"
+    },
+    {
+      "scope": "etc.pink",
+      "name": "Automagical import pink",
+      "foreground": "var(pink)"
+    },
+    {
+      "scope": "etc.neonpink",
+      "name": "Automagical import neonpink",
+      "foreground": "var(neonpink)"
+    },
+    {
+      "scope": "etc.po35",
+      "name": "Automagical import po35",
+      "foreground": "var(po35)"
+    },
+    {
+      "scope": "etc.speak",
+      "name": "Automagical import speak",
+      "foreground": "var(speak)"
+    },
+    {
+      "scope": "etc.cyan",
+      "name": "Automagical import cyan",
+      "foreground": "var(cyan)"
+    },
+    {
+      "scope": "etc.neoncyan",
+      "name": "Automagical import neoncyan",
+      "foreground": "var(neoncyan)"
+    },
+    {
+      "scope": "etc.po137",
+      "name": "Automagical import po137",
+      "foreground": "var(po137)"
+    },
+    {
+      "scope": "etc.science",
+      "name": "Automagical import science",
+      "foreground": "var(science)"
+    },
+    {
+      "scope": "etc.lime",
+      "name": "Automagical import lime",
+      "foreground": "var(lime)"
+    },
+    {
+      "scope": "etc.neonlime",
+      "name": "Automagical import neonlime",
+      "foreground": "var(neonlime)"
+    },
+    {
+      "scope": "etc.cardboard",
+      "name": "Automagical import cardboard",
+      "foreground": "var(cardboard)"
+    },
+    {
+      "scope": "etc.board",
+      "name": "Automagical import board",
+      "foreground": "var(board)"
+    },
+    {
+      "scope": "etc.lcd",
+      "name": "Automagical import lcd",
+      "foreground": "var(lcd)"
+    },
+    {
+      "scope": "etc.button",
+      "name": "Automagical import button",
+      "foreground": "var(button)"
+    },
+    {
+      "scope": "etc.steel",
+      "name": "Automagical import steel",
+      "foreground": "var(steel)"
+    },
+    {
+      "scope": "etc.screen",
+      "name": "Automagical import screen",
+      "foreground": "var(screen)"
+    },
+    {
+      "scope": "etc.gold",
+      "name": "Automagical import gold",
+      "foreground": "var(gold)"
+    },
+    {
+      "scope": "etc._cursor",
+      "name": "Automagical import _cursor",
+      "foreground": "var(_cursor)"
+    },
+    {
+      "scope": "etc._heading_1",
+      "name": "Automagical import _heading_1",
+      "foreground": "var(_heading_1)"
+    },
+    {
+      "scope": "etc._heading_2",
+      "name": "Automagical import _heading_2",
+      "foreground": "var(_heading_2)"
+    },
+    {
+      "scope": "etc._heading_3",
+      "name": "Automagical import _heading_3",
+      "foreground": "var(_heading_3)"
+    },
+    {
+      "scope": "etc._heading_4",
+      "name": "Automagical import _heading_4",
+      "foreground": "var(_heading_4)"
+    },
+    {
+      "scope": "etc._heading_5",
+      "name": "Automagical import _heading_5",
+      "foreground": "var(_heading_5)"
+    },
+    {
+      "scope": "etc._heading_6",
+      "name": "Automagical import _heading_6",
+      "foreground": "var(_heading_6)"
+    }
+  ]
 }

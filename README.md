@@ -9,6 +9,10 @@ Adds the following color schemes:
 
 ![Preview](Preview@2x.png)
 
+Legacy Themes are also available if you prefered those. I do not expect to be updating these going forward, as the two variants diverged from each other, and supported different scopes & syntax features as I was working light or dark scheme at any moment and forgot to update the other.
+
+![Preview](Preview Legacy.png)
+
 ## Installation
 
 ### Sublime Text
