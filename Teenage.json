@@ -1,0 +1,771 @@
+{
+  "name": "Teenage",
+  "author": "Michael Cramer",
+  "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments.",
+
+  "replacements": {
+    "BaseAdjust\\((.*)\\)": {
+      "light": "color(\\1 l(- 15%))",
+      "dark": "color(\\1 l(+ 15%))"
+    },
+
+
+    "BackgroundAccent\\((.*)\\)": "color(\\1 a(15%))",
+    "PunctAccent\\((.*)\\)": "color(\\1 a(66%))",
+    "PunctHighlight\\((.*)\\)":   "color(\\1 a(50%))"  ,
+    "Brighten\\((.*)\\)": "color(\\1 l(75%))",
+    "DeclareAccent\\((.*)\\)": {
+      "light": "color(\\1 a(15%))",
+      "dark": "color(\\1 a(25%))"
+    },
+    "Neon\\((.*)\\)": "color(\\1 l(60%))"
+  },
+  "variables": {
+    // Color
+
+    // PO 12 : 'Rythm' -> Green
+    "po12": "BaseAdjust(hsl( 162,  71%, 34%))",
+
+    "rythm": "var(po12)",
+    "green": "var(po12)",
+    "neongreen": "Neon(var(po12))",
+
+    // PO 14 : 'Sub' -> Blue
+    "po14": "BaseAdjust(hsl( 191,  91%, 41%))",
+
+    "sub": "var(po14)",
+    "blue": "var(po14)",
+    "neonblue": "Neon(var(po14))",
+
+    // PO 16 : 'Factory' -> Red-salmon
+    "po16": "BaseAdjust(hsl(  16,  92%, 64%))",
+
+    "factory": "var(po16)",
+    "salmon": "var(po16)",
+    "orange": "var(po16)",
+    "neonorange": "Neon(var(po16))",
+
+    // PO 20 : 'Arcade' -> Violet
+    "po20": "BaseAdjust(hsl( 267,  55%, 64%))",
+
+    "arcade": "var(po20)",
+    "violet": "var(po20)",
+    "neonviolet": "Neon(var(po20))",
+
+    // PO 24 : 'Office' -> Yellow
+    "po24": "BaseAdjust(hsl(  43,  94%, 57%))",
+
+    "office": "var(po24)",
+    "yellow": "var(po24)",
+    "neonyellow": "Neon(var(po24))",
+
+    // PO 28 : 'Robot' -> Red
+    "po28": "BaseAdjust(hsl(   0,  89%, 53%))",
+
+    "robot": "var(po28)",
+    "red": "var(po28)",
+    "neonred": "Neon(var(po28))",
+
+    // PO 32 : 'Tonic' -> white
+    "po32": "BaseAdjust(hsl(   0,   0%, 96%))",
+
+    "tonic": "var(po32)",
+    "white": "var(po32)",
+    "neonwhite": "Neon(var(po32))",
+
+    // PO 33 : 'KO' -> another red
+    "po33": "BaseAdjust(hsl(  10,  90%, 55%))",
+
+    "ko": "var(po33)",
+    "punch": "var(po33)",
+    "neonpunch": "Neon(var(po33))",
+
+    // PO 33 : 'ghostly' -> pink
+    "po33ghostly": "BaseAdjust(rgb(  250,  45, 112))",
+    "ghostly": "var(po33ghostly)",
+    "pink": "var(po33ghostly)",
+    "neonpink": "Neon(var(po33ghostly))",
+
+    // PO 35 : 'speak' -> cyan
+    "po35": "BaseAdjust(hsl( 182,  77%, 32%))",
+
+    "speak": "var(po35)",
+    "cyan": "var(po35)",
+    "neoncyan": "Neon(var(po35))",
+
+    // PO 137 : 'science' -> lime
+    "po137": "BaseAdjust(hsl(91, 100%, 30%))",
+
+    "science": "var(po137)",
+    "lime": "var(po137)",
+    "neonlime": "Neon(var(po137))",
+
+    // cardboard
+    "cardboard": "rgb(  207,  163, 118) ",
+
+    // greyscales
+    "board": "hsl(   0,  0%,  10% )",
+    "lcd": "hsl( 195,  3%, 25% )",
+    "button": "hsl( 180,  6%, 50% )",
+    "steel": "hsl(  0,  0%, 80% )",
+    "screen": "hsl( 200, 12%, 90% )",
+    // gold
+    "gold": "hsl(  36,  85%, 74%)",
+    // Rule Semantics
+    "_cursor": "var(ghostly)",
+    "_heading_1": {
+      // red
+      "light": "Neon(var(po28))",
+      "dark": "var(po28)"
+    },
+    "_heading_2": {
+      // orange
+      "light": "Neon(var(po16))",
+      "dark": "var(po16)"
+    },
+    "_heading_3": {
+      // yellow
+      "light": "Neon(var(po24))",
+      "dark": "var(po24)"
+    },
+    "_heading_4": {
+      // green
+      "light": "Neon(var(po12))",
+      "dark": "var(po12)"
+    },
+    "_heading_5": {
+      // blue
+      "light": "Neon(var(po14))",
+      "dark": "var(po14)"
+    },
+    "_heading_6": {
+      // violet
+      "light": "Neon(var(po20))",
+      "dark": "var(po20)"
+    }
+  },
+  "globals": {
+    "selection_border_width": "4",
+    "line_diff_width": "8",
+    "shadow_width": "24",
+
+    "brackets_options": "squiggly_underline bold",
+    "bracket_contents_options": "underline bold",
+    "tags_options": "squiggly_underline bold",
+    "foreground": {
+      "light": "var(lcd)",
+      "dark": "var(steel)"
+    },
+    "background": {
+      "light": "var(screen)",
+      "dark": "var(board)"
+    },
+    "invisibles": {
+      "light": "var(steel)",
+      "dark": "var(lcd)"
+    },
+    "shadow": "var(button)",
+    "caret": "var(_cursor)",
+    "block_caret": "var(_cursor)",
+    "selection": "color(var(_cursor) a(33%))",
+    "selection_border": "var(_cursor)",
+    "line_highlight": "color(var(_cursor) a(20%))",
+    "highlight": "var(_cursor)",
+    "misspelling": "var(robot)",
+    "fold_marker": "var(gold)",
+    "brackets_foreground": "var(robot)",
+    "bracket_contents_foreground": "var(arcade)",
+    "tags_foreground": "var(sub)",
+    "line_diff_added": "var(rythm)",
+    "line_diff_modified": "var(arcade)",
+    "line_diff_deleted": "var(punch)",
+    "inactive_selection": "var(button)",
+    "find_highlight": "var(button)",
+    "guide": {
+      "light": "var(steel)",
+      "dark": "var(lcd)"
+    },
+    "active_guide": "var(_cursor)",
+    "stack_guide": "var(button)",
+    "minimap_border": "var(button)",
+    "accent": "var(button)"
+  },
+  "rules": [
+// comments         gold on black
+    {
+      "name": "Comment",
+      "scope": "comment | punctuation.definition.comment",
+      "foreground": "var(gold)",
+      "background": {
+
+      "light":"var(board)",
+      "dark":"black"
+
+      },
+      "font_style":"italic"
+    },
+
+
+// Keywords         violet
+
+ {
+      "name": "Keyword",
+      "scope": "keyword",
+      "font_style":"bold",
+    },
+
+ {
+      "name": "Keyword",
+      "scope": "(keyword ) - ( keyword.operator | keyword.control.flow.return )",
+      "foreground": "var(arcade)",
+
+
+    },
+
+    {
+      "name": "Keyword return",
+      "scope": "keyword.control.flow.return",
+           "foreground": "color(var(arcade) blend(var(robot) 75% ))",
+
+
+    },
+
+     {
+      "name": "Keyword Control and Loops",
+      "scope": "keyword.control - keyword.control.flow.return",
+           "foreground": "var(rythm)",
+
+
+    },
+
+    {
+      "name": "HTML tags",
+      "scope": "(meta.tag | source.css entity) - ( punctuation | meta.attribute-with-value )",
+      "foreground": "var(arcade)",
+      "font_style":"bold",
+    },
+ {
+      "name": "HTML tags",
+      "scope": "meta.tag punctuation - (punctuation.separator.key-value | string)",
+      "foreground": "PunctHighlight(var(arcade))",
+      // "font_style":"bold",
+    },
+
+
+// operators        black/white
+// assignment       black/white
+    {
+      "name": "Operators",
+      "scope": "keyword.operator | keyword.operator.assignment | punctuation.separator.annotation.return | punctuation.separator.key-value",
+      "foreground": {
+        "light":"var(black)",
+        "dark":"var(white)"
+      },
+    },
+
+// grouping         lime green
+
+
+// Imports
+{
+      "name": "Imports",
+      "scope": "meta.statement.import",
+
+          "foreground": {
+      "light":"var(black)",
+      "dark":"var(white)",
+      },
+      // "background": "BackgroundAccent(var(yellow))",
+
+    },
+
+
+// types            orange
+
+{
+      "name": "Library class/type",
+      "scope": "(support.type | support.class) - meta.property-name",
+           "foreground": {
+      "light":"var(black)",
+      "dark":"var(white)",
+      },
+      // "background": "BackgroundAccent(var(yellow))",
+
+    },
+
+// annotations      yellow
+
+ {
+      "name": "Annotation",
+      "scope": "punctuation.definition.annotation | meta.function.annotation | meta.function.parameters.annotation | variable.annotation",
+    "foreground":"var(yellow)"
+      //     "foreground": {
+      // "light": "color(var(yellow) blend( black 50% hsl ))",
+      // "dark":  "color(var(yellow) blend( white 50% hsl ))",
+      // },
+      // "background": "BackgroundAccent(var(yellow))",
+
+    },
+
+
+
+
+// classes          red
+{
+      "scope": "meta.class ",
+      "font_style": "bold",
+
+},
+
+    {
+      "name": "Inherited class",
+      "scope": "meta.class| entity.other.attribute-name.class",
+      "foreground": "var(red)",
+    },
+
+// inherited        yellow
+
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class| entity.other.attribute-name.id",
+      "foreground": "var(yellow)",
+    },
+
+
+
+// methods          green
+// functions        lime
+
+
+
+    {
+      "name": "Entity name",
+      "scope": "entity.name.function",
+      "foreground": "var(robot)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Function call",
+      "scope": "variable.function",
+      "foreground": "var(robot)"
+    },
+
+
+
+
+    {
+      "name": "Library function",
+      "scope": "support.function, support.macro",
+      "foreground": "var(factory)"
+    },
+
+
+// decorators       yellow on lime
+
+{
+
+  "scope":"meta.annotation (meta.qualified-name | punctuation) | variable.annotation (support.function | meta.generic-name)",
+    // "background": "BackgroundAccent(var(lime))"
+},
+
+// data             lime green on green
+
+
+
+// keys
+      {
+      "scope": "(meta.mapping.key | entity.name.tag.yaml | meta.link.inline.description | meta.property-name |  entity.other.attribute-name) - punctuation",
+      "foreground": "var(orange)",
+      // "background": "BackgroundAccent(var(yellow))"
+      },
+
+// strings          cyan       on green
+
+      {
+      "name": "String",
+      "scope": "string - ( meta.mapping.key  | entity.name.tag.yaml ) - punctuation",
+      "foreground": "var(speak)",
+      "background": "BackgroundAccent(var(green))"
+      },
+
+
+// numeral         red        on green
+
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "var(red)",
+      // "background": "BackgroundAccent(var(green))"
+
+    },
+
+
+    {
+      "name": "Number suffix",
+      "scope": "storage.type.numeric",
+       "foreground": "var(orange)",
+      // "background": "BackgroundAccent(var(green))"
+    },
+
+// constant        yellow     on green
+
+
+   {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "foreground": "var(yellow)",
+          // "background": "BackgroundAccent(var(green))"
+    },
+    {
+      "name": "User-defined constant",
+      "scope": "constant.character | constant.other",
+      "foreground": "var(yellow)",
+          // "background": "BackgroundAccent(var(green))"
+    },
+
+
+
+// variable        blue       on orange
+
+    // meta.statement.import
+      {
+      "name": "Variables",
+      "scope": "( variable | qualified-name | meta.generic-name ) - ( variable.annotation | punctuation | meta.class | entity.name.function | variable.function | meta.statement.import | meta.function.annotation.return) ",
+       "foreground":  [
+       "var(green)",
+       "color(var(green) blend( var(violet) 25% ))",
+       "color(var(green) l(- 10%))",
+       "color(var(green) l(+ 10%))",
+       "color(var(cyan) l(+ 10%))",
+       "color(var(blue) blend( var(violet) 25% ))",
+       "color(var(cyan) blend( var(violet) 25% ))",
+       "color(var(cyan) l(- 10%))",
+       "color(var(blue) l(+ 10%))",
+       "var(blue)",
+       "var(cyan)",
+       "color(var(blue) l(- 10%))",
+     ],
+
+
+          // "background": "BackgroundAccent(var(green))",
+    },
+
+    {
+      "name": "Member Variable",
+      "scope": "variable.member",
+       "foreground":  "var(blue)",
+
+          // "background": "BackgroundAccent(var(green))",
+    },
+    {
+      "name": "JavaScript Dollar",
+      "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
+
+       "foreground":  "var(blue)",
+
+          // "background": "BackgroundAccent(var(green))",
+    },
+
+
+    // // // // // // // // // // //
+
+    // {
+    //   "name": "Punctuation",
+    //   "scope": "punctuation.definition - punctuation.definition.numeric.base - meta.link",
+    //   "foreground": "var(button)"
+    // },
+
+
+
+    // // {
+    // //   "name": "Punctuation",
+    // //   "scope": "punctuation.separator, punctuation.terminator",
+    // //   "foreground": "var(button)",
+    // // },
+    // {
+    //   "name": "Accessor",
+    //   "scope": "punctuation.accessor"
+    // },
+
+    // {
+    //   "name": "Storage",
+    //   "scope": "storage",
+    //   "foreground": "var(yellow)",
+    // },
+    // {
+    //   "name": "Storage type",
+    //   "scope": "storage.type",
+    //   "foreground": "var(yellow)"
+    // },
+
+    // {
+    //   "name": "Entity name",
+    //   "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+    //   "foreground": "var(factory)",
+    //   "font_style": "bold"
+    // },
+
+    // {
+    //   "name": "Tag name",
+    //   "scope": "entity.name.tag",
+    //   "foreground": "var(robot)"
+    // },
+    // {
+    //   "name": "Tag attribute",
+    //   "scope": "entity.other.attribute-name",
+    //   "foreground": "var(factory)"
+    // },
+
+
+    // // {
+    // //   "name": "Language variable",
+    // //   "scope": "variable.language",
+    // //   "foreground": "var(sub)"
+    // // },
+
+
+    // {
+    //   "name": "Library constant",
+    //   "scope": "support.constant"
+    // },
+
+    // {
+    //   "name": "Invalid",
+    //   "scope": "invalid",
+    //   "foreground": "var(board)",
+    //   "background": "var(ko)"
+    // },
+    // {
+    //   "name": "Invalid deprecated",
+    //   "scope": "invalid.deprecated",
+    //   "foreground": "var(board)",
+    //   "background": "var(factory)"
+    // },
+    // {
+    //   "name": "Key",
+    //   "scope": "(entity.name.tag.yaml | meta.mapping.key | string.other.link.title) - punctuation",
+    //   "foreground": "var(orange)"
+    // },
+    {
+      "name": "Unquoted String",
+      "scope": "( source.yaml string.unquoted | meta.link.inline.metadata | markup.underline.link | meta.property-value) - (meta.mapping.key | punctuation )",
+      "foreground": "var(arcade)",
+         "background": "BackgroundAccent(var(speak))"
+    },
+
+
+    // Markup
+
+
+    {
+      "name": "markup headings",
+      "scope": "markup.heading",
+      "background": "var(lcd)"
+    },
+    {
+      "name": "markup headings",
+      "scope": "markup.heading punctuation.definition.heading",
+      "foreground": "var(steel)"
+    },
+
+    {
+      "name": "markup h1",
+      "scope": "markup.heading.1",
+      "foreground": "var(_heading_1)"
+    },
+    {
+      "name": "markup h2",
+      "scope": "markup.heading.2",
+      "foreground": "var(_heading_2)"
+    },
+    {
+      "name": "markup h3",
+      "scope": "markup.heading.3",
+      "foreground": "var(_heading_3)"
+    },
+    {
+      "name": "markup h4",
+      "scope": "markup.heading.4",
+      "foreground": "var(_heading_4)"
+    },
+    {
+      "name": "markup h5",
+      "scope": "markup.heading.5",
+      "foreground": "var(_heading_5)"
+    },
+    {
+      "name": "markup h6",
+      "scope": "markup.heading.6",
+      "foreground": "var(_heading_6)"
+    },
+
+    {
+      "name": "markup links",
+      "scope": "( meta.link | string.other.link  ) punctuation",
+      "foreground": "var(science)"
+    },
+
+    // // {
+    // //   "name": "markup links",
+    // //   "scope": "string.other.link | markup.underline.link",
+    // //   // "foreground":"var(science)"
+    // // },
+    // // {
+    // //   "name": "markup bold",
+    // //   "scope": "markup.bold"
+    // // },
+    // // {
+    // //   "name": "markup italic",
+    // //   "scope": "markup.italic"
+    // // },
+    // // {
+    // //   "name": "markup underline",
+    // //   "scope": "markup.underline"
+    // // },
+    // // {
+    // //   "name": "markup bold/italic",
+    // //   "scope": "markup.italic markup.bold | markup.bold markup.italic"
+    // // },
+    // // {
+    // //   "name": "markup bold/underline",
+    // //   "scope": "markup.underline markup.bold | markup.bold markup.underline"
+    // // },
+    // // {
+    // //   "name": "markup italic/underline",
+    // //   "scope": "markup.underline markup.italic | markup.italic markup.underline"
+    // // },
+    // // {
+    // //   "name": "markup bold/italic/underline",
+    // //   "scope": "markup.bold markup.italic markup.underline | markup.bold markup.underline markup.italic | markup.italic markup.bold markup.underline | markup.italic markup.underline markup.bold | markup.underline markup.bold markup.italic | markup.underline markup.italic markup.bold"
+    // // },
+    {
+      "name": "markup hr",
+      "scope": "punctuation.definition.thematic-break",
+      "foreground": "var(science)"
+    },
+    {
+      "name": "markup numbered list bullet",
+      "scope": "markup.list.unnumbered.bullet | markup.list.numbered.bullet",
+      "foreground": "var(ghostly)"
+    },
+    // {
+    //   "name": "markup numbered list block",
+    //   "scope": "markup.list",
+    //   "foreground": {
+    //     "light": "color(var(pink) l(20%))",
+    //     "dark": "color(var(pink) l(90%))"
+    //   }
+    // },
+    {
+      "name": "markup blockquote",
+      "scope": "markup.quote",
+      "background": "color(var(speak) a(10%))"
+    },
+    {
+      "name": "markup blockquote",
+      "scope": "markup.quote punctuation.definition.blockquote",
+      "foreground": "var(speak)"
+    },
+    {
+      "name": "markup code",
+      "scope": "markup.raw ",
+    "background": "BackgroundAccent(BackgroundAccent(var(steel)))"
+    },{
+      "name": "markup code",
+      "scope": "meta.code-fence ",
+    "background": "BackgroundAccent(var(steel))"
+    },
+    {
+      "name": "markup code",
+      "scope": "markup.raw.inline - punctuation",
+      "foreground":"var(cardboard)",
+     "background": "BackgroundAccent(var(steel))"
+    },
+
+    {
+      "name": "markup italic",
+      "scope": "markup.italic - punctuation.definition.italic",
+      "foreground": "var(sub)",
+      "font_style":"italic"
+    },
+    {
+      "name": "markup italic",
+      "scope": "markup.italic punctuation.definition.italic ",
+      "foreground": "PunctHighlight(var(speak))",
+      "font_style":"italic"
+    },
+    {
+      "name": "markup bold",
+      "scope": " markup.bold - punctuation.definition.bold",
+      "foreground": "var(robot)",
+      "font_style":"bold"
+,
+    },
+    {
+      "name": "markup bold",
+      "scope": " markup.bold punctuation.definition.bold",
+      "foreground": "PunctHighlight(var(robot))",
+      "font_style":"bold"
+,
+    },
+
+    // {
+    //   "name": "diff.header",
+    //   "scope": "meta.diff, meta.diff.header",
+    //   "foreground": "var(science)"
+    // },
+    // {
+    //   "name": "diff.deleted",
+    //   "scope": "markup.deleted",
+    //   "foreground": {
+    //     "light": "var(neonred)",
+    //     "dark": "var(red)"
+    //   }
+    // },
+    // {
+    //   "name": "diff.inserted",
+    //   "scope": "markup.inserted",
+    //   "foreground": {
+    //     "light": "var(neongreen)",
+    //     "dark": "var(green)"
+    //   }
+    // },
+    // {
+    //   "name": "diff.changed",
+    //   "scope": "markup.changed",
+    //   "foreground": {
+    //     "light": "var(neonviolet)",
+    //     "dark": "var(violet)"
+    //   }
+    // },
+    // {
+    //   "name": "CSS Properties",
+    //   "scope": "support.type.property-name"
+    // },
+    // {
+    //   "scope": "constant.numeric.line-number.match"
+    // },
+    // {
+    //   "scope": "message.error"
+    // },
+    // {
+    //   "scope": "diff.deleted"
+    // },
+    // {
+    //   "scope": "diff.deleted.char"
+    // },
+    // {
+    //   "scope": "diff.inserted"
+    // },
+    // {
+    //   "scope": "diff.inserted.char"
+    // }
+  ]
+}
+
+// ,
+// "foreground": "var()",
+// "background": "var()"
+
+
+// "foreground_adjust": "l(- 30%)"
