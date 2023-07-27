@@ -61,7 +61,9 @@
     "_heading_3": "var(po24)",
     "_heading_4": "var(po12)",
     "_heading_5": "var(po14)",
-    "_heading_6": "var(po20)"
+    "_heading_6": "var(po20)",
+    "black": "black",
+    "white": "white"
   },
   "globals": {
     "selection_border_width": "4",
@@ -316,7 +318,7 @@
     },
     {
       "background": "color(color(var(steel)) a(15%) a(15%))",
-      "scope": "markup.raw ",
+      "scope": "markup.raw - (punctuation| markup.heading) ",
       "name": "markup code"
     },
     {
@@ -327,8 +329,14 @@
     {
       "foreground": "var(cardboard)",
       "background": "color(var(steel) a(15%))",
-      "scope": "markup.raw.inline - punctuation",
+      "scope": "markup.raw.inline - (punctuation| markup.heading)",
       "name": "markup code"
+    },
+    {
+      "foreground": "var(cardboard)",
+      "background": "var(black)",
+      "scope": "markup.heading markup.raw.inline",
+      "name": "markup code heading"
     },
     {
       "foreground": "var(sub)",
@@ -648,6 +656,16 @@
       "scope": "etc._heading_6",
       "name": "Automagical import _heading_6",
       "foreground": "var(_heading_6)"
+    },
+    {
+      "scope": "etc.black",
+      "name": "Automagical import black",
+      "foreground": "var(black)"
+    },
+    {
+      "scope": "etc.white",
+      "name": "Automagical import white",
+      "foreground": "var(white)"
     }
   ]
 }

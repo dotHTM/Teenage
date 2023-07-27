@@ -142,7 +142,13 @@
       // violet
       "light": "Neon(var(po20))",
       "dark": "var(po20)"
-    }
+    },
+    // Easy mistakes
+
+    "black":"black",
+    "white":"white",
+
+
   },
   "globals": {
     "selection_border_width": "4",
@@ -666,20 +672,30 @@
       "scope": "markup.quote punctuation.definition.blockquote",
       "foreground": "var(speak)"
     },
+
     {
       "name": "markup code",
-      "scope": "markup.raw ",
+      "scope": "markup.raw - (punctuation| markup.heading) ",
     "background": "BackgroundAccent(BackgroundAccent(var(steel)))"
-    },{
+    },
+
+    {
       "name": "markup code",
       "scope": "meta.code-fence ",
     "background": "BackgroundAccent(var(steel))"
     },
     {
       "name": "markup code",
-      "scope": "markup.raw.inline - punctuation",
+      "scope": "markup.raw.inline - (punctuation| markup.heading)",
       "foreground":"var(cardboard)",
      "background": "BackgroundAccent(var(steel))"
+    },
+
+   {
+      "name": "markup code heading",
+      "scope": "markup.heading markup.raw.inline",
+      "foreground":"var(cardboard)",
+     "background": "var(black)",
     },
 
     {
