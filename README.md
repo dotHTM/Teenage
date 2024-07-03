@@ -39,6 +39,12 @@ With [auto_upgrade](http://wbond.net/sublime_packages/package_control/settings/)
 2. *Browse Packages* from the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `⇧⌘P` on OS X)
 3. Copy the `.sublime-color-scheme` file to `Packages`
 
+## Built Using
+
+Written in a single json file and parsed by [sublThemer](https://github.com/dotHTM/sublThemer) into the themed versions.
+
+Testing and screenshot with [Dual-Color-Scheme-Development](https://github.com/dotHTM/Dual-Color-Scheme-Development).
+
 ## License
 
 License is provided according to [LICENSE](https://github.com/dotHTM/Teenage/blob/master/LICENSE).
