@@ -231,7 +231,7 @@
     {
       "name": "Keyword return",
       "scope": "keyword.control.flow.return",
-           "foreground": "color(var(arcade) blend(var(robot) 75% ))",
+           "foreground": "color(var(arcade) blend(var(punch) 50% ))",
 
 
     },
@@ -318,14 +318,14 @@
 
 // classes          red
 {
-      "scope": "meta.class ",
+      "scope": "meta.class - meta.block",
       "font_style": "bold",
 
 },
 
     {
       "name": "Inherited class",
-      "scope": "meta.class| entity.other.attribute-name.class",
+      "scope": "meta.class - meta.block| entity.other.attribute-name.class",
       "foreground": "var(red)",
     },
 
@@ -395,13 +395,13 @@
       },
 
 
-// numeral         red        on green
+// numeral         orange        on green
 
     {
       "name": "Number",
       "scope": "constant.numeric",
-      "foreground": "var(red)",
-      // "background": "BackgroundAccent(var(green))"
+      "foreground": "var(orange)",
+      "background": "BackgroundAccent(var(green))"
 
     },
 
@@ -410,7 +410,7 @@
       "name": "Number suffix",
       "scope": "storage.type.numeric",
        "foreground": "var(orange)",
-      // "background": "BackgroundAccent(var(green))"
+      "background": "BackgroundAccent(var(green))"
     },
 
 // constant        yellow     on green
@@ -713,14 +713,14 @@
     {
       "name": "markup bold",
       "scope": " markup.bold - punctuation.definition.bold",
-      "foreground": "var(robot)",
+      "foreground": "var(punch)",
       "font_style":"bold"
 ,
     },
     {
       "name": "markup bold",
       "scope": " markup.bold punctuation.definition.bold",
-      "foreground": "PunctHighlight(var(robot))",
+      "foreground": "PunctHighlight(var(punch))",
       "font_style":"bold"
 ,
     },

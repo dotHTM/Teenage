@@ -1,0 +1,138 @@
+pagetitle: testfile
+---
+
+# Heading 1
+
+<div id="synopsis" class="heading">Nisi sint
+    consequat dolore ullamco `enim` aute eu s
+    it <a href="google.com">exercitation</a>
+tempor.</div>
+
+## Heading 2
+
+### Heading 3 with `code` inline
+
+> Consequat quis sit est excepteur
+> dolor **adipisicing** _mollit_ sit consectetur
+> culpa dolor *deserunt* __sunt__ officia ut `enim`
+> ut cupidatat ut eu eiusmod incididunt in
+> irure laborum irure veniam pariatur.
+
+#### Heading 4
+
+_Reprehenderit_ excepteur laboris **minim** ut sint
+duis sit in sunt in qui **occaecat** laborum
+[dolore in incididunt](google.com) mollit proident
+*mollit* __mollit__ proident qui nisi.
+
+##### Heading 5
+
+Voluptate aute commodo minim.
+
+###### Heading 6
+
+- In minim aliqua nulla anim aute <https://google.com>
+ in in anim laboris consequat dolore cupidatat dolore
+  non est consequat sit cupidatat.
+
+  - Lorem ipsum ut `enim` duis aliquip:
+        1. officia amet velit amet qui
+        2. culpa sunt in `enim` et eu ut
+        3. excepteur ut ut sed `reprehenderit`
+
+  - Tempor magna -amet- ~incididunt~ laboris sed
+  elit magna eu `enim` anim mollit minim cillum.
+- officia amet velit amet qui
+- culpa sunt in `enim` et eu ut
+- excepteur ut ut sed `reprehenderit`
+
+
+
+
+## Code Formatting:
+
+_CSS_
+
+```css
+body{
+    width: 48px;
+    border: 1em solid seagreen;
+}
+.carton{
+    display: inline-block;
+    float:left;
+}
+#heading{
+    font-family: Helvetica, monospace;
+}
+```
+
+
+**yaml:**
+
+```yaml
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: "trailing-whitespace"
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+-   repo: https://github.com/asottile/setup-cfg-fmt
+    rev: v2.4.0
+    hooks:
+    -   id: setup-cfg-fmt
+```
+
+**json:**
+
+```json
+{
+    "hello": "world",
+    "fizz": 3.15,
+    "buzz": 5
+
+}
+```
+
+_Python example_
+
+```python
+from datetime import datetime
+from typing import NamedTuple
+
+nowStr = datetime.today().isoformat()
+
+class Processor(NamedTuple):
+    name:str = "bobby"
+    x:int = 3.14
+    y:int = 5
+
+def function(inp:list[int|float])->str:
+    """Here is a doc string"""
+    for var in inp:
+        var.name = f"""hello world"""
+        # process stuff in this loop
+        ...
+    return str(0)
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+```
+
+```java
+import org.asdf.parent.module;
+public class FooBar{
+    static {
+        try{
+            1/0
+            print("hello world")
+        }
+    }
+}
+
+
+```

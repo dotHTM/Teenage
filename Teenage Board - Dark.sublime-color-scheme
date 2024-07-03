@@ -117,7 +117,7 @@
       "name": "Keyword"
     },
     {
-      "foreground": "color(var(arcade) blend(var(robot) 75% ))",
+      "foreground": "color(var(arcade) blend(var(punch) 50% ))",
       "scope": "keyword.control.flow.return",
       "name": "Keyword return"
     },
@@ -159,11 +159,11 @@
     },
     {
       "font_style": "bold",
-      "scope": "meta.class "
+      "scope": "meta.class - meta.block"
     },
     {
       "foreground": "var(red)",
-      "scope": "meta.class| entity.other.attribute-name.class",
+      "scope": "meta.class - meta.block| entity.other.attribute-name.class",
       "name": "Inherited class"
     },
     {
@@ -198,12 +198,14 @@
       "name": "String"
     },
     {
-      "foreground": "var(red)",
+      "foreground": "var(orange)",
+      "background": "color(var(green) a(15%))",
       "scope": "constant.numeric",
       "name": "Number"
     },
     {
       "foreground": "var(orange)",
+      "background": "color(var(green) a(15%))",
       "scope": "storage.type.numeric",
       "name": "Number suffix"
     },
@@ -351,13 +353,13 @@
       "name": "markup italic"
     },
     {
-      "foreground": "var(robot)",
+      "foreground": "var(punch)",
       "font_style": "bold",
       "scope": " markup.bold - punctuation.definition.bold",
       "name": "markup bold"
     },
     {
-      "foreground": "color(var(robot) a(50%))",
+      "foreground": "color(var(punch) a(50%))",
       "font_style": "bold",
       "scope": " markup.bold punctuation.definition.bold",
       "name": "markup bold"
