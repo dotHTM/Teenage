@@ -113,6 +113,12 @@
     },
     {
       "foreground": "var(arcade)",
+      "font_style": "bold",
+      "scope": "storage.modifier.module.scad",
+      "name": "OpenSCAD module and function keywords"
+    },
+    {
+      "foreground": "var(arcade)",
       "scope": "(keyword ) - ( keyword.operator | keyword.control.flow.return )",
       "name": "Keyword"
     },
